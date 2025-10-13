@@ -446,8 +446,8 @@ halfling_administration = {
 	production_efficiency = 0.15
 	adventurers_loyalty_modifier = 0.1
 	global_colonial_growth = 20
-	adm_tech_cost_modifier = 0.075
-	dip_tech_cost_modifier = 0.075
+	adm_tech_cost_modifier = -0.075
+	dip_tech_cost_modifier = -0.075
 	
 	#Negatives
 	harsh_treatment_cost = 0.3
@@ -955,7 +955,7 @@ harimari_administration = {		#Philosophers and rulers of many
 	administrative_efficiency = 0.05	#1.5	Harimari are experienced administrators
 	idea_cost = -0.1			#1	Harimari are raised with philosophy
 	num_accepted_cultures = 1		#0.5	Harimari often rule over different cultures
-	vassal_forcelimit_bonus = 1		#0.75	Same thing^
+	vassal_forcelimit_bonus = 1		#0.75	Same thing
 
 						#1,5 + 1 + 0.5 + 0.5 + 0.75 = 4.25
 
