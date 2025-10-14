@@ -1330,6 +1330,7 @@ studying_homunculus_loyalty_magic = { country_diplomatic_power = -1 country_admi
 
 
 homunculus_study = { mages_ruler_experience_mod = 0.2 picture = "transmutation_mod_icon_spell_modifier" }
+homunculus_training = { drill_gain_modifier = 1 picture = "transmutation_mod_icon_spell_modifier" }
 homunculus_operating_theatre = { idea_cost = -0.05 picture = "transmutation_mod_icon_spell_modifier" }
 
 homunculus_eminence_grise = {
