@@ -1,6 +1,6 @@
-owner = Y27
-controller = Y27
-add_core = Y27
+owner = Y26
+controller = Y26
+add_core = Y26
 culture = gangim
 religion = accretive_path
 

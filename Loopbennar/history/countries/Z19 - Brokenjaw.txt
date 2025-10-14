@@ -42,3 +42,6 @@ capital = 989
 		siege = 1
 	}
 }
+
+add_adm_tech = 1
+change_innovativeness = -4
