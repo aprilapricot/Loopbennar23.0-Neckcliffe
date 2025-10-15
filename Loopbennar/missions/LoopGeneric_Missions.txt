@@ -76,7 +76,12 @@ loopgeneric_column_2 = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			grown_by_states = 15
+			OR = {
+				grown_by_states = 15
+				any_owned_province = {
+					development = 65
+					}
+				}
 			treasury = 500
 		}
 		effect = {
