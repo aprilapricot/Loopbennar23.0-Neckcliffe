@@ -5,7 +5,18 @@ loopgeneric_column_2 = {
 	potential = { 
 		OR = { 
 			tag = A20
-			tag = V16
+			tag = Z55
+			tag = A03
+			tag = S29
+			tag = S17
+			tag = H30
+			tag = H31
+			tag = H32
+			tag = Y73
+			tag = V12
+			tag = F65
+			
+			
 		}
 	}
 
