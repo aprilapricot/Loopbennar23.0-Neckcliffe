@@ -1,6 +1,5 @@
 # No previous file for Anbennar6153
-culture = gataw
-religion = mystic_accord
+religion = the_thought
 
 owner = H32
 controller = H32
