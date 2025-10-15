@@ -1315,18 +1315,22 @@ illusion_1_fear_and_loathing_effect = { #Fear and Loathing
 			limit = { 
 				OR = {
 					is_in_war = {
-						attacker_leader = PREV
+						attacker_leader = FROM
+						defender_leader = THIS
+
 					}
 					is_in_war = {
-						defender_leader = PREV
+						attacker_leader = THIS
+						defender_leader = FROM
+
 					}
 				}
-				capital_scope = { controlled_by = PREV has_siege = no }
+				capital_scope = { controlled_by = THIS has_siege = no }
 			}
 			country_event = { id = magic_spell.601 }
 			capital_scope = { anti_tax_rebels = 1 }
 		}
-		every_enemy_country = {
+		every_war_enemy_country = {
 			add_country_modifier = { name = illusion_1_fear_and_loathing_debuff duration = 3650 }
 		}
 		every_rival_country = {
