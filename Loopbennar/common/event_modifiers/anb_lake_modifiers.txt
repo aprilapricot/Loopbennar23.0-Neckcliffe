@@ -577,7 +577,6 @@ federation_duty = {
 }
 
 federation_national_bank = {
-	interest = -1
 	build_cost = -0.05
 }
 
