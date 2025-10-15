@@ -47,6 +47,11 @@ Q70_crusade_II = {
 	core_creation = -0.05
 }
 
+Q70_crusade_III = {
+	province_warscore_cost = -0.075
+	core_creation = -0.075
+}
+
 Q70_model = {
 	land_maintenance_modifier = 0.05
 	general_cost = -0.075

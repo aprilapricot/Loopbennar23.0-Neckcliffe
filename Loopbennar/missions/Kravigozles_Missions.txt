@@ -1378,6 +1378,11 @@ kravigozles_mission_88 = {
 				id = flavour_kravigozles.5
 				days = 7
 				}
+			remove_country_modifier = Q70_crusade_II
+			add_country_modifier = {
+				name = "Q70_crusade_III"
+				duration = -1				
+			}
         }
     }
 
