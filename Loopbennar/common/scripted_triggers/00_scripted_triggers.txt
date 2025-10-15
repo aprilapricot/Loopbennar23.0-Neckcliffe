@@ -1837,6 +1837,7 @@ republic_with_female_rulers_trigger = {
 
 is_absolutism_active = {
 	OR = {
+		current_age = age_of_reformation
 		current_age = age_of_absolutism
 		current_age = age_of_revolutions
 	}
