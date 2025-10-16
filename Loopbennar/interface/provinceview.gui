@@ -2782,6 +2782,12 @@ guiTypes = {
 					position = { x = 22 y = 221 }
 					scripted = yes
 				}
+				guiButtonType = { #Samisalik Bolki
+					name = "sb_button"
+					quadTextureSprite = "khatalashya_province_button_space_colony"
+					position = { x = 22 y = 221 }
+					scripted = yes
+				}
 				guiButtonType = { #Khatalashya
 					name = "khatalashya_province_button"
 					quadTextureSprite = "khatalashya_province_button_space_colony"
@@ -3267,6 +3273,12 @@ guiTypes = {
 					position = { x = 214 y = 26 }
 					scripted = yes
 				}
+				guiButtonType = { #Samisalik Bolki
+					name = "sb_button"
+					quadTextureSprite = "khatalashya_province_button_space_colony"
+					position = { x = 214 y = 26 }
+					scripted = yes
+				}
 				guiButtonType = { #Khatalashya
 					name = "khatalashya_province_button"
 					quadTextureSprite = "khatalashya_province_button_space_colony"
@@ -3444,6 +3456,12 @@ guiTypes = {
 				guiButtonType = {
 					name = "GFX_province_button_dummy_5"
 					quadTextureSprite = "GFX_make_state_button"
+					position = { x = 214 y = 26 }
+					scripted = yes
+				}
+				guiButtonType = { #Samisalik Bolki
+					name = "sb_button"
+					quadTextureSprite = "khatalashya_province_button_space_colony"
 					position = { x = 214 y = 26 }
 					scripted = yes
 				}

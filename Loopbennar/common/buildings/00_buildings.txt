@@ -34,6 +34,9 @@ marketplace = {
 		province_trade_power_modifier = 0.5
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = marketplace
 			type = production
@@ -118,6 +121,9 @@ workshop = {
 		local_production_efficiency = 0.5
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		on_built_production_building_effect = yes
 		add_development_from_building = {
 			building = workshop
@@ -176,6 +182,9 @@ temple = {
 		local_tax_modifier = 0.6
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_building = {
@@ -351,6 +360,9 @@ barracks = {
 		local_manpower_modifier = 0.5
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		on_built_manpower_building_effect = yes 
 		add_development_from_building = {
 			building = barracks
@@ -449,6 +461,9 @@ shipyard = {
 		local_has_galleass = yes #1.35
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = shipyard
 			type = production
@@ -499,6 +514,9 @@ fort_15th = {
 
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -790,6 +808,9 @@ coastal_defence = {
 		has_port = yes
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		#Anbennar
 		anbennar_building_effect = yes
 
@@ -847,6 +868,9 @@ courthouse = {
 		allowed_num_of_buildings = 1
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = courthouse
 			type = tax
@@ -966,6 +990,9 @@ dock = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = dock
 			type = production
@@ -1085,6 +1112,9 @@ regimental_camp = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = regimental_camp
 			type = manpower
@@ -1147,6 +1177,9 @@ fort_16th = {
 
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -1410,6 +1443,9 @@ naval_battery = {
 		has_port = yes
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		#Anbennar
 		anbennar_building_effect = yes
 		if = {
@@ -1473,6 +1509,9 @@ cathedral = {
 		local_tax_modifier = 0.9
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_upgrading_or_building = {
@@ -1619,6 +1658,9 @@ university = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = university
 			type = tax
@@ -1764,6 +1806,9 @@ trade_depot = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_upgrading_or_building = {
 			building = trade_depot
 			obsolete_building = marketplace
@@ -1845,6 +1890,9 @@ grand_shipyard = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_upgrading_or_building = {
 			building = grand_shipyard
 			obsolete_building = shipyard
@@ -1907,6 +1955,9 @@ training_fields = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		on_built_manpower_building_effect = yes 
 		# if = {
 			# limit = {
@@ -2012,6 +2063,9 @@ fort_17th = {
 
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -2278,6 +2332,9 @@ stock_exchange = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		if = {
 			limit = {
 				has_province_flag = built_dev_trade_depot
@@ -2374,6 +2431,9 @@ counting_house = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		on_built_production_building_effect = yes
 		add_development_from_upgrading_or_building = {
 			building = counting_house
@@ -2427,6 +2487,9 @@ town_hall = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_upgrading_or_building = {
 			building = town_hall
 			obsolete_building = courthouse
@@ -2543,6 +2606,9 @@ drydock = {
 	}
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_upgrading_or_building = {
 			building = drydock
 			obsolete_building = dock
@@ -2612,6 +2678,9 @@ conscription_center = {
 		land_forcelimit = 1
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_upgrading_or_building = {
 			building = conscription_center
 			obsolete_building = regimental_camp
@@ -2681,6 +2750,9 @@ fort_18th = {
 
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		if = {
 			limit = {
 				FROM = { has_government_attribute = on_fort_built_nobles_loyalty }
@@ -2932,6 +3004,9 @@ wharf = {
 
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3046,6 +3121,9 @@ weapons = {
 	onmap = yes
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3153,6 +3231,9 @@ textile = {
 	onmap = yes
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3236,6 +3317,9 @@ plantations = {
 	onmap = yes
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3324,6 +3408,9 @@ tradecompany = {
 	onmap = yes
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3442,6 +3529,9 @@ farm_estate = {
 	onmap = yes
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3618,6 +3708,9 @@ mills = {
 	}
 	onmap = yes
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3706,6 +3799,9 @@ furnace = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -3780,6 +3876,9 @@ ramparts = {
 
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_dev_from_building = { #1.35
 			building = manufactory 
 			type = manpower 
@@ -3893,6 +3992,9 @@ soldier_households = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -4065,6 +4167,9 @@ impressment_offices = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = impressment_offices
 			type = manpower
@@ -4201,6 +4306,9 @@ state_house = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		add_development_from_building = {
 			building = state_house
 			type = tax
@@ -4304,6 +4412,9 @@ mage_tower = {
 		factor = 1
 	}
 	on_built = {
+		#Samisalik Bolki
+		sb_peace_challenge_construction = yes
+		
 		if = {
 			limit = {
 				NOT = {

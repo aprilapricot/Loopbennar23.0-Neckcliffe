@@ -1752,6 +1752,9 @@ tribal = {
 				mteibhar_centralized_delath
 				mteibhar_grand_confederation
 				zokka_gnoll_pack
+
+				#Samisalik Bolki
+				sb_hill_troll_tribe_reform
 			}
 		}
 		tribal_cultural_values = { #Tier 2
@@ -2145,6 +2148,9 @@ theocracy = {
 				clerical_vic_estate
 
 				# Sponsored Adventurers
+
+				#Samisalik Bolki
+				sb_shrakloomar_reform
 				
 			}
 		}
