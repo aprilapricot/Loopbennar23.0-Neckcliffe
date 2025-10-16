@@ -2386,7 +2386,6 @@ anbennar_T5_human_human_2 = {
 	modifiers = {
 		#Positive
 		land_morale = 0.05
-		mil_tech_cost_modifier = -0.05
 		#Negative
 	}
 	
@@ -2546,9 +2545,7 @@ anbennar_T5_human_goblin = {
 	}
 	modifiers = {
 		#Positive
-		land_forcelimit_modifier = 0.1
-		#Negative
-		morale_damage_received = 0.1
+		land_forcelimit_modifier = 0.05
 	}
 	
 	ai = {
@@ -2577,7 +2574,7 @@ anbennar_T5_human_half_elven = {
 		leader_land_shock = 1
 		
 		#Negative
-		global_manpower_modifier = -0.075
+		global_manpower_modifier = -0.05
 	}
 	
 	ai = {
@@ -2686,7 +2683,7 @@ anbennar_T5_human_harpy = {
 	modifiers = {
 		#Positive
 		siege_ability = 0.10
-		land_attrition = -0.1
+		land_attrition = -0.125
 		#Negative
 		defensiveness = -0.125
 	}
@@ -2770,10 +2767,10 @@ anbennar_T5_human_lizardfolk = {
 	}
 	modifiers = {
 		#Positive
-		allowed_marine_fraction = 0.2
+		allowed_marine_fraction = 0.1
 		#Negative
-		cavalry_cost = 0.1
-		infantry_cost = 0.1
+		cavalry_cost = 0.12
+		infantry_cost = 0.12
 	}
 	effect = {
 		custom_tooltip = anbennar_T5_human_lizardfolk_tt
@@ -2863,8 +2860,8 @@ anbennar_T5_human_orcish = {
 		shock_damage = 0.1
 		may_recruit_female_generals = yes
 		#Negative
-		siege_ability = -0.2
-		defensiveness = -0.2
+		siege_ability = -0.1
+		defensiveness = -0.1
 	}
 	
 	ai = {
