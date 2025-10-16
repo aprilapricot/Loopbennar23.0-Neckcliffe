@@ -1,6 +1,9 @@
 #Customwizardry
 loop_colony_cost = {
 	local_warscore_cost_modifier = 0.75
+}
+	
+	loopvisor_cooldown = { }
 
 #Kravigozles
 Q70_testing_grounds = {
