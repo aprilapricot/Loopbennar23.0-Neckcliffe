@@ -3,7 +3,11 @@ loop_colony_cost = {
 	local_warscore_cost_modifier = 0.75
 }
 	
-	loopvisor_cooldown = { }
+loopvisor_cooldown = { }
+
+loop_ae = {
+	ae_impact = -0.15
+}
 
 #Kravigozles
 Q70_testing_grounds = {
