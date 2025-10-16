@@ -5121,7 +5121,7 @@ A74_ideas = {
 		tolerance_own = 1
 	}
 	A74_impressment_of_the_monstrous = {
-		merchant = 1
+		merchants = 1
 	}
 	A74_festival_of_shadows = {
 		shock_damage_received = -0.1
