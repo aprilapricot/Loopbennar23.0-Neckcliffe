@@ -6574,7 +6574,7 @@ I05_ideas = {
 		horde_unity = 1
 	}
 	I05_warchanters_of_mithradhum = {
-		moral_damage = 0.1
+		morale_damage = 0.1
 	}
 	I05_famed_mithril_warriors = {
 		prestige = 1
