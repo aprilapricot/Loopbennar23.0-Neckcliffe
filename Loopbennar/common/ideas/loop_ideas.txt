@@ -1,4 +1,4 @@
-Q01_ideas = { #Ahudazar
+AHU_ideas = { #Ahudazar
 	start = {
 		discipline = 0.05
 		production_efficiency = 0.1
