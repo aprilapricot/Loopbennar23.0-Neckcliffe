@@ -958,7 +958,10 @@ ahudazar_4 = {
 				}
 				num_of_buildings_in_province = 3
 				has_manufactory_trigger = yes
+				OR  = {
 				has_dock_building_trigger = yes 
+				has_port = no
+				}
 				development = 20
 			}
 			rimvuawuni_area  = {
@@ -970,7 +973,10 @@ ahudazar_4 = {
 				}
 				num_of_buildings_in_province = 3
 				has_manufactory_trigger = yes
+				OR  = {
 				has_dock_building_trigger = yes 
+				has_port = no
+				}
 				development = 20
 			}
 			kukihombe_area  = {
