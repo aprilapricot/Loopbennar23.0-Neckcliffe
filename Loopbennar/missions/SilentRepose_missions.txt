@@ -24,7 +24,6 @@ silentrepose_1 = {
 			350 = {
 				has_building = mage_tower
 			}
-			has_estate_privilege = estate_mages_patronage_of_the_magical_arts
 			estate_influence = {
 				estate = estate_mages
 				influence = 50
