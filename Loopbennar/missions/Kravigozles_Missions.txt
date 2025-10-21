@@ -237,15 +237,12 @@ kravigozles_mission_8 = {
         }
 
         effect = {
-			every_owned_province = {
-					limit = {
-						has_terrain = jungle
-					}
-					add_province_modifier = {
+			dao_nako_region = {
+				add_province_modifier = {
 						name = Q70_fathers_soil
 						duration = -1
 					}
-				}
+			}
         }
     }
 kravigozles_mission_9 = {
