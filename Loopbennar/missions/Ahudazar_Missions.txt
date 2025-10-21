@@ -1192,6 +1192,7 @@ ahudazar_5 = {
 				owns_or_non_sovereign_subject_of = 5447
 				5447 = { 
 					OR = {
+					has_building = marketplace
 					has_building = trade_depot
 					has_building = stock_exchange
 				}
