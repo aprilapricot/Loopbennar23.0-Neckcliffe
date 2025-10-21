@@ -4125,7 +4125,7 @@ Z53_ideas = {
 		diplomatic_reputation = 1
 	}
 	Z53_pacification_of_the_beast = {
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	Z53_defensive_mentality = {
 		defensiveness = 0.2
@@ -5766,7 +5766,7 @@ G63_ideas = {
 H22_ideas = {
 	start = {
 		colonists = 1
-		development_cost = -0.15
+		development_cost = -0.1
 	}
 	bonus = {
 		global_trade_power = 0.1
@@ -7352,7 +7352,7 @@ I24_ideas = {
 		vassal_forcelimit_bonus = 0.5
 	}
 	I24_hearth_and_hold = {
-		development_cost = -0.2
+		development_cost = -0.15
 	}
 	I24_udreks_legacy = {
 		diplomatic_reputation = 1
@@ -16030,7 +16030,7 @@ I99_ideas = {
 	free = yes
 
 	I99_jazhobedin = {
-		development_cost = -0.15 #massive shanty towns, Jazhobedin "great towns"
+		development_cost = -0.1 #massive shanty towns, Jazhobedin "great towns"
 	}
 	I99_courage_of_the_horde = { #courage of the horde
 		land_morale = 0.1
@@ -25992,7 +25992,7 @@ F54_ideas = {
 U27_ideas = { #Made by @Ottokard#1942
 	start = {
 		infantry_fire = 0.15 #they enthusiastically adopt guns
-		development_cost = -0.15 #a lot of "free" land
+		development_cost = -0.1 #a lot of "free" land
 	}
 	bonus = {
 		morale_damage_received = -0.10
@@ -26006,7 +26006,7 @@ U27_ideas = { #Made by @Ottokard#1942
 		stability_cost_modifier = -0.10
 	}
 	U27_from_many_came_one = { #access to a large array of talent from across the federation
-		advisor_cost = -0.1
+		idea_cost = -0.05
 	}
 	U27_built_from_scratch = { #
 		build_cost = -0.10
@@ -26023,7 +26023,6 @@ U27_ideas = { #Made by @Ottokard#1942
 	}
 	U27_it_is_the_future_we_seek = { #looks to the future, cares little for the past
 		technology_cost = -0.05
-		idea_cost = -0.05
 	}
 }
 
