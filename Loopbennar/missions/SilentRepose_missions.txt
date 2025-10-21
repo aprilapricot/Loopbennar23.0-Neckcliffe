@@ -1140,14 +1140,6 @@ silentrepose_4 = {
 			stability = 3
 			devotion = 85
 			custom_trigger_tooltip = {
-				tooltip = A83_scrying_internal_dissidents_tt
-				OR = {
-					has_country_modifier = magic_estate_scrying_internal_dissidents_1
-					has_country_modifier = magic_estate_scrying_internal_dissidents_2
-					has_country_modifier = magic_estate_scrying_internal_dissidents_3
-				}
-			}
-			custom_trigger_tooltip = {
 				tooltip = A83_tackling_death_tt
 				had_country_flag = {
 					flag = A83_spreading_fear_of_the_inevitable_flag
