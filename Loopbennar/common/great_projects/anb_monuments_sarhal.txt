@@ -2633,7 +2633,7 @@ azmeras_wezinmesig = {
 			mages_loyalty_modifier = 0.1
 			church_influence_modifier = 0.05
 			mages_influence_modifier = 0.05
-			mages_ruler_experience_mod = 0.5
+			mages_ruler_experience_mod = 0.05
 		}
 
 		on_upgraded = {
