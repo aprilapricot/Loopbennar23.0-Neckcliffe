@@ -461,7 +461,7 @@ silentrepose_2 = {
 					duration = -1
 					name = A83_camallaire
 				}
-				add_center_of_trade_level = 1
+				center_of_trade = 1 
 			}
 			add_treasury = -250
 			add_adm_power = -50
