@@ -2380,7 +2380,7 @@ anbennar_T5_human_human_2 = {
 		}
 	}
 	trigger = {
-		medium_tolerance_human_race_trigger = yes
+		high_tolerance_human_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = human amount = 1 }
 	}
 	modifiers = {
@@ -2406,7 +2406,7 @@ anbennar_T5_human_centaur = {
 		}
 	}
 	trigger = {
-		medium_tolerance_centaur_race_trigger = yes
+		high_tolerance_centaur_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = centaur amount = 1 }
 	}
 	modifiers = {
@@ -2433,7 +2433,7 @@ anbennar_T5_human_dwarven = {
 		}
 	}
 	trigger = {
-		medium_tolerance_dwarven_race_trigger = yes
+		high_tolerance_dwarven_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = dwarven amount = 1 }
 	}
 	modifiers = {
@@ -2460,7 +2460,7 @@ anbennar_T5_human_elven = {
 		}
 	}
 	trigger = {
-		medium_tolerance_elven_race_trigger = yes
+		high_tolerance_elven_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = elven amount = 1 }
 	}
 	modifiers = {
@@ -2487,7 +2487,7 @@ anbennar_T5_human_gnollish = {
 		}
 	}
 	trigger = {
-		medium_tolerance_gnollish_race_trigger = yes
+		high_tolerance_gnollish_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = gnollish amount = 1 }
 	}
 	modifiers = {
@@ -2515,7 +2515,7 @@ anbennar_T5_human_gnomish = {
 		}
 	}
 	trigger = {
-		medium_tolerance_gnomish_race_trigger = yes
+		high_tolerance_gnomish_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = gnomish amount = 1 }
 	}
 	modifiers = {
@@ -2540,7 +2540,7 @@ anbennar_T5_human_goblin = {
 		}
 	}
 	trigger = {
-		medium_tolerance_goblin_race_trigger = yes
+		high_tolerance_goblin_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = goblin amount = 1 }
 	}
 	modifiers = {
@@ -2565,7 +2565,7 @@ anbennar_T5_human_half_elven = {
 		}
 	}
 	trigger = {
-		hmedium_tolerance_half_elven_race_trigger = yes
+		high_tolerance_half_elven_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = half_elven amount = 1 }
 	}
 	modifiers = {
@@ -2594,7 +2594,7 @@ anbennar_T5_human_half_orcish = {
 		}
 	}
 	trigger = {
-		medium_tolerance_half_orcish_race_trigger = yes
+		high_tolerance_half_orcish_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = half_orcish amount = 1 }
 	}
 	modifiers = {
@@ -2622,7 +2622,7 @@ anbennar_T5_human_halfling = {
 		}
 	}
 	trigger = {
-		medium_tolerance_halfling_race_trigger = yes
+		high_tolerance_halfling_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = halfling amount = 1 }
 	}
 	modifiers = {
@@ -2649,7 +2649,7 @@ anbennar_T5_human_harimari = {
 		}
 	}
 	trigger = {
-		medium_tolerance_harimari_race_trigger = yes
+		high_tolerance_harimari_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = harimari amount = 1 }
 	}
 	modifiers = {
@@ -2677,7 +2677,7 @@ anbennar_T5_human_harpy = {
 		}
 	}
 	trigger = {
-		medium_tolerance_harpy_race_trigger = yes
+		high_tolerance_harpy_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = harpy amount = 1 }
 	}
 	modifiers = {
@@ -2706,7 +2706,7 @@ anbennar_T5_human_hobgoblin = {
 		}
 	}
 	trigger = {
-		medium_tolerance_hobgoblin_race_trigger = yes
+		high_tolerance_hobgoblin_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 }
 	}
 	modifiers = {
@@ -2734,7 +2734,7 @@ anbennar_T5_human_kobold = {
 		}
 	}
 	trigger = {
-		medium_tolerance_kobold_race_trigger = yes
+		high_tolerance_kobold_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = kobold amount = 1 }
 	}
 	modifiers = {
@@ -2761,7 +2761,7 @@ anbennar_T5_human_lizardfolk = {
 		}
 	}
 	trigger = {
-		medium_tolerance_lizardfolk_race_trigger = yes
+		high_tolerance_lizardfolk_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = lizardfolk amount = 1 }
 		num_of_ports = 1
 	}
@@ -2823,7 +2823,7 @@ anbennar_T5_human_ogre = {
 		}
 	}
 	trigger = {
-		medium_tolerance_ogre_race_trigger = yes
+		high_tolerance_ogre_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = ogre amount = 1 }
 	}
 	modifiers = {
@@ -2852,7 +2852,7 @@ anbennar_T5_human_orcish = {
 		}
 	}
 	trigger = {
-		medium_tolerance_orcish_race_trigger = yes
+		high_tolerance_orcish_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = orcish amount = 1 }
 	}
 	modifiers = {
@@ -2881,7 +2881,7 @@ anbennar_T5_human_ruinborn = {
 		}
 	}
 	trigger = {
-		medium_tolerance_ruinborn_race_trigger = yes
+		high_tolerance_ruinborn_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = ruinborn amount = 1 }
 	}
 	modifiers = {
@@ -2911,7 +2911,7 @@ anbennar_T5_human_troll = {
 		}
 	}
 	trigger = {
-		medium_tolerance_troll_race_trigger = yes
+		high_tolerance_troll_race_trigger = yes
 		fast_owns_num_pops_of_race = { race = troll amount = 1 }
 	}
 	modifiers = {
