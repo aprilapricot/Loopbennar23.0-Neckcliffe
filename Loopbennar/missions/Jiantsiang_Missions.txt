@@ -682,10 +682,9 @@ jiantsiang_three = {
 					}
 				NOT = { local_autonomy = 10 }
 			}
-			religious_unity = 1
-			adm_power = 66
-			dip_power = 66
-			mil_power = 66
+			adm_power = 99
+			dip_power = 99
+			mil_power = 99
 			development_in_provinces = {
 				value = 200
 				religion = high_philosophy
@@ -694,9 +693,9 @@ jiantsiang_three = {
 		
 		effect = {
 			country_event = { id = flavor_jiantsiang.11 }
-			add_adm_power = -66
-			add_dip_power = -66
-			add_mil_power = -66
+			add_adm_power = -99
+			add_dip_power = -99
+			add_mil_power = -99
 		}
 	}
 	
