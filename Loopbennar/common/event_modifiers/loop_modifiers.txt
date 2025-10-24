@@ -118,7 +118,7 @@ Q70_coast = {
 #Customwizardry
 
 
-loop_magical_surge = {
+loop_magical_surge  = {
 	mages_estate_experience_mod = 1
 }
 
@@ -129,6 +129,13 @@ loop_dw_nerf = {
 
 
 #Ahudazar
+
+ahudazar_hulls = {
+	light_ship_trade_power = 0.1
+	naval_morale = 0.1
+	
+}
+
 ahudazar_gnoll_wars = {
 	discipline = 0.05
 	land_morale = 0.1
