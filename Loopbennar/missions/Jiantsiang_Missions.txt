@@ -682,12 +682,16 @@ jiantsiang_three = {
 					}
 				NOT = { local_autonomy = 10 }
 			}
+			religious_unity = 1
 			adm_power = 99
 			dip_power = 99
 			mil_power = 99
 			development_in_provinces = {
 				value = 200
-				religion = high_philosophy
+				OR = {
+						religion = high_philosophy
+						religion = suhans_praxis
+					}
 			}
 		}
 		
