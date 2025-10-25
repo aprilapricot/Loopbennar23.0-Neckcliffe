@@ -1227,7 +1227,7 @@ theatre_conqueror_bonus = { years_of_nationalism = -5 picture = "illusion_mod_ic
 theatre_tactical_genius_bonus = { leader_land_manuever = 1 picture = "illusion_mod_icon_spell_modifier" }
 theatre_bold_fighter_bonus = { leader_land_shock = 1 picture = "illusion_mod_icon_spell_modifier" }
 theatre_strict_bonus = { discipline = 0.025 picture = "illusion_mod_icon_spell_modifier" }
-theatre_inspiring_leader_bonus = { land_morale = 0.025 picture = "illusion_mod_icon_spell_modifier" }
+theatre_inspiring_leader_bonus = { land_morale = 0.05 picture = "illusion_mod_icon_spell_modifier" }
 theatre_martial_educator_bonus = { army_tradition_decay = -0.005 picture = "illusion_mod_icon_spell_modifier" }
 theatre_navigator_bonus = { ship_durability = 0.025 picture = "illusion_mod_icon_spell_modifier" }
 theatre_fierce_negotiator_bonus = { merc_maintenance_modifier = -0.125 picture = "illusion_mod_icon_spell_modifier" }
