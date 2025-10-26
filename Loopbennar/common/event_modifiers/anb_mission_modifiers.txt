@@ -34268,7 +34268,6 @@ khadisrapur_empower_merchants_mod = {
 }
 khadisrapur_mobilization_mod = {
 	global_regiment_cost = -0.1
-	discipline = 0.05
 	monthly_industrial_capacity = -2
 }
 khadisrapur_pirvandi_estate = {
