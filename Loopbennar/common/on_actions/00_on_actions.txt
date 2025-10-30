@@ -7698,7 +7698,6 @@ on_monthly_pulse = {
 
 on_yearly_pulse = {
 	events = {
-		flavor_loopgeneric.16
 		effelai_bloom.0
 		rending.700			#Kharunyana reward
 		the_command.51		#Hidden event to convert wuhyunizable provinces
