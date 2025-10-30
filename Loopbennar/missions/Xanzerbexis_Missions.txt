@@ -269,6 +269,13 @@ A49_1_post_1 = {
 					has_state_edict = edict_protect_trade
 				}
 			}
+			num_of_owned_provinces_with = {
+				value = 17
+				trade_goods = livestock
+				has_production_building_trigger = yes
+				development = 15
+				
+			}
 			NOT = { has_country_modifier = A49_incubating_eggs }
 		}
 
@@ -527,14 +534,10 @@ A49_1_post_2 = {
 		}
 
 		trigger = {
-			OR = {
-				production_leader = { trade_goods = iron }
-				trading_bonus = { trade_goods = iron value = yes }
-			}
 			num_of_owned_provinces_with = {
-				value = 6
+				value = 11
 				trade_goods = iron
-				development = 15
+				development = 20
 			}
 			6513 = { #Hogzhaad
 				development = 40

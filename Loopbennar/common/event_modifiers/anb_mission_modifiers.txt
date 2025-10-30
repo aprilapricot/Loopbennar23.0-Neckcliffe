@@ -34938,7 +34938,7 @@ A49_incubating_eggs = {
 	local_garrison_size = 0.5
 }
 A49_wyvern_o_plenty = {
-	trade_value_modifier = 0.5
+	trade_value_modifier = 0.3
 }
 A49_wyvern_venom_bullets = {
 	infantry_power = 0.15

@@ -951,6 +951,26 @@ kravigozles_mission_40 = {
 			add_splendor = 800
         }
     }
+	
+	kravigozles_mission_48 = {
+    icon = mission_well_of_majesty
+    required_missions = { kravigozles_mission_47  }
+    position = 17
+         provinces_to_highlight = {
+				
+			OR = {
+				
+			}
+        }
+        trigger = {
+			custom_tooltip = Q70_tobemergedmp_tt
+			
+        }
+
+        effect = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+    }
 }
 
 kravigozles_4 = {
@@ -1131,7 +1151,84 @@ kravigozles_mission_67 = {
 			custom_tooltip = Q70_red_spawn_2_tt
         }
     }
+	
+kravigozles_mission_68 = {
+    icon = mission_trollsbay
+    required_missions = { kravigozles_mission_67 }
+    position = 13
+        provinces_to_highlight = {
 
+        }
+        trigger = {
+        }
+
+        effect = {
+        }
+    }
+	
+kravigozles_mission_69 = {
+    icon = mission_lantern_festival
+    required_missions = { kravigozles_mission_68 }
+    position = 14
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+
+        effect = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+    }
+	
+kravigozles_mission_70 = {
+    icon = mission_arverynn_street
+    required_missions = { kravigozles_mission_69 }
+    position = 15
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+
+        effect = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+    }
+
+kravigozles_mission_71 = {
+    icon = mission_tianlou
+    required_missions = { kravigozles_mission_70 kravigozles_mission_90}
+    position = 16
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+
+        effect = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+    }
+	
+kravigozles_mission_72 = {
+    icon = mission_anvil
+    required_missions = { kravigozles_mission_71 kravigozles_mission_48}
+    position = 18
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+
+        effect = {
+			custom_tooltip = Q70_tobemergedmp_tt
+        }
+    }
 
 }
 
@@ -1383,9 +1480,39 @@ kravigozles_mission_88 = {
         }
     }
 
-
+kravigozles_mission_89 = {
+    icon = mission_sunset_alternative
+    required_missions = { kravigozles_mission_88 }
+    position = 14
+		 provinces_to_highlight = {
+			
+        }
+        trigger = {
+			
+        }
+		
+		effect = {
+			
+        }
 	
+	}
 	
+kravigozles_mission_90 = {
+    icon = mission_stormy_seas
+    required_missions = { kravigozles_mission_89 }
+    position = 15
+		 provinces_to_highlight = {
+			
+        }
+        trigger = {
+			
+        }
+		
+		effect = {
+			
+        }
+	
+	}
 
 
 }
