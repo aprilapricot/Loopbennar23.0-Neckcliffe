@@ -258,7 +258,6 @@ A49_1_post_1 = {
 		}
 
 		trigger = {
-			production_leader = { trade_goods = livestock }
 			num_of_owned_provinces_with = {
 				value = 6
 				has_province_modifier = A49_wyvern_farm
