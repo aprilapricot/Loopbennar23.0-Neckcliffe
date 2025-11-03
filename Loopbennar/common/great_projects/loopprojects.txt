@@ -22,51 +22,14 @@ corin_temple = {
 		AND = {
 			has_owner_religion = yes
 			religion_group = cannorian
-				custom_trigger_tooltip = {					
-						OR = {
-							culture_group = escanni
-							culture_group = dostanorian_g
-							culture_group = lencori
-							culture_group = anbennarian
-							culture_group = alenic
-							culture_group = businori
-							culture_group = reachman
-							culture = imperial_halfling
-							culture = imperial_gnome
-							culture = moon_elf
-							culture = silver_dwarf
-							culture = green_orc
-							culture = iron_dwarf
-							culture = common_goblin
-							
-						}
-				}
-				province_is_or_accepts_culture = yes
+			province_is_or_accepts_culture = yes
 		}
 	}		
 	can_upgrade_trigger = {
 		AND = {
 			has_owner_religion = yes
 			religion_group = cannorian
-				custom_trigger_tooltip = {
-						OR = {
-							culture_group = escanni
-							culture_group = dostanorian_g
-							culture_group = lencori
-							culture_group = anbennarian
-							culture_group = alenic
-							culture_group = businori
-							culture_group = reachman
-							culture = imperial_halfling
-							culture = imperial_gnome
-							culture = moon_elf
-							culture = silver_dwarf
-							culture = green_orc
-							culture = iron_dwarf
-							culture = common_goblin
-						}
-				}
-				province_is_or_accepts_culture = yes
+			province_is_or_accepts_culture = yes
 		}
 	}		
 	keep_trigger = {
