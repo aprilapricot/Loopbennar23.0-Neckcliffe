@@ -418,7 +418,6 @@ country_decisions = {
 	H79_nation = {
 		major = yes
 		potential = {
-			owns = 4247
 			has_reform = dwarovar_adventurer_reform
 			has_country_modifier = dwarven_administration
 			NOT = { has_country_flag = formed_diggy_formable }
@@ -439,6 +438,7 @@ country_decisions = {
 		effect = {
 			adventurer_hold_formation = { tag = H79 culture = diamond capital_id = 4247 }
 			swap_non_generic_missions = yes
+			country_event = { id = ideagroups.1 }
 		}
 		ai_will_do = {
 			factor = 1
