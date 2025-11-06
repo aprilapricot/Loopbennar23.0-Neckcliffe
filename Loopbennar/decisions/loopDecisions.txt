@@ -415,7 +415,7 @@ country_decisions = {
         }
 	}
 	
-	H79_nation = {
+	H79_nation2 = {
 		major = yes
 		potential = {
 			has_reform = dwarovar_adventurer_reform
