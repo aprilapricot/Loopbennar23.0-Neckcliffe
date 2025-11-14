@@ -13,7 +13,7 @@ monarchy_mechanic = {
 	}
 	modifiers = {
 		nobles_influence_modifier = 0.05
-		max_absolutism = 20
+		max_absolutism = 60
 
 		# Anbennar
 		uppercastes_influence_modifier = 0.05
