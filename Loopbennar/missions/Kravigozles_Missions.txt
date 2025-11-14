@@ -1463,7 +1463,7 @@ kravigozles_mission_88 = {
         trigger = {
 			west_salahad_region	 = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				}
         }
 
@@ -1484,16 +1484,35 @@ kravigozles_mission_89 = {
     icon = mission_sunset_alternative
     required_missions = { kravigozles_mission_88 }
     position = 14
-		 provinces_to_highlight = {
-			
+		provinces_to_highlight = {
+				province_id = 466
+				province_id = 475
+				province_id = 473
+				province_id = 5481
         }
         trigger = {
-			
-        }
+			466 = {
+				has_fort_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			475 = {
+				has_fort_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			473 = {
+				has_fort_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5481 = {
+				has_fort_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		
-		effect = {
-			
-        }
+		add_country_modifier = { 
+					name = Q70_khet
+					duration = 9125
+				}
 	
 	}
 	
@@ -1501,7 +1520,7 @@ kravigozles_mission_90 = {
     icon = mission_stormy_seas
     required_missions = { kravigozles_mission_89 }
     position = 15
-		 provinces_to_highlight = {
+		provinces_to_highlight = {
 			
         }
         trigger = {
@@ -1509,7 +1528,10 @@ kravigozles_mission_90 = {
         }
 		
 		effect = {
-			
+			country_event = {
+				id = flavour_kravigozles.6
+				days = 7
+				}
         }
 	
 	}

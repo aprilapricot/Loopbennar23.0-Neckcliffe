@@ -178,3 +178,136 @@ country_event = {
 	
 	}
 }
+
+country_event = {
+	id = flavour_kravigozles.6
+	title = flavour_kravigozles.6.t
+	desc = flavour_kravigozles.6.d
+	picture = THE_COVENANT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = flavour_kravigozles.6.a
+		trigger = {
+				475 = {
+					OR = {
+					religion = corinite
+					religion = ravelian
+					religion = regent_court
+					religion = infernal_court
+					religion = uelos_cult
+					}
+				}
+			}
+		add_country_modifier = {
+					name = Q70_bounty_I
+					duration = -1
+				}
+			
+	}
+	option = {
+		name = flavour_kravigozles.6.b
+		trigger = {
+				475 = {
+					OR = {
+					religion = bulwari_sun_cult
+					religion = the_jadd
+					religion = elven_forebearers
+					}
+				}
+			}
+		add_country_modifier = {
+					name = Q70_bounty_II
+					duration = -1
+				}
+			
+	
+	}
+	option = {
+		name = flavour_kravigozles.6.c
+		trigger = {
+		475 = { religion = old_bulwari_sun_cult }
+		}
+		add_country_modifier = {
+					name = Q70_bounty_III
+					duration = -1
+				}
+	
+	}
+	option = {
+		name = flavour_kravigozles.6.d
+		trigger = {
+		475 = { religion = mother_akasik }
+		}
+		add_country_modifier = {
+					name = Q70_bounty_IV
+					duration = -1
+				}
+	
+	}
+	option = {
+		name = flavour_kravigozles.6.e
+		trigger = {
+		475 = {
+					OR = {
+					religion = elikhetist
+					religion = nirakhetist
+					religion = aakhetist
+					}
+				}
+		}
+		add_country_modifier = {
+					name = Q70_bounty_V
+					duration = -1
+				}
+	
+	}
+	option = {
+		name = flavour_kravigozles.6.f
+		trigger = {
+		475 = {
+					OR = {
+					religion = xhazobkult
+					religion = kvangahga
+					}
+				}
+		}
+		add_country_modifier = {
+					name = Q70_bounty_VI
+					duration = -1
+				}
+	
+	}
+	option = {
+		name = flavour_kravigozles.6.g
+		trigger = {
+		475 = {
+			NOT = {
+					OR = {
+					religion = xhazobkult
+					religion = kvangahga
+					religion = elikhetist
+					religion = nirakhetist
+					religion = aakhetist
+					religion = mother_akasik
+					religion = bulwari_sun_cult
+					religion = the_jadd
+					religion = elven_forebearers
+					religion = infernal_court
+					religion = uelos_cult
+					religion = old_bulwari_sun_cult
+					}
+				
+			}
+		}
+		add_country_modifier = {
+					name = Q70_bounty_VII
+					duration = -1
+				}
+	
+	}
+}
