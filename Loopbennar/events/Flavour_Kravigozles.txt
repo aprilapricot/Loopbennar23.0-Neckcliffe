@@ -204,7 +204,7 @@ country_event = {
 				}
 			}
 		add_country_modifier = {
-					name = Q70_bounty_I
+					name = "Q70_bounty_I"
 					duration = -1
 				}
 			
@@ -221,7 +221,7 @@ country_event = {
 				}
 			}
 		add_country_modifier = {
-					name = Q70_bounty_II
+					name = "Q70_bounty_II"
 					duration = -1
 				}
 			
@@ -233,7 +233,7 @@ country_event = {
 		475 = { religion = old_bulwari_sun_cult }
 		}
 		add_country_modifier = {
-					name = Q70_bounty_III
+					name = "Q70_bounty_III"
 					duration = -1
 				}
 	
@@ -244,7 +244,7 @@ country_event = {
 		475 = { religion = mother_akasik }
 		}
 		add_country_modifier = {
-					name = Q70_bounty_IV
+					name = "Q70_bounty_IV"
 					duration = -1
 				}
 	
@@ -261,7 +261,7 @@ country_event = {
 				}
 		}
 		add_country_modifier = {
-					name = Q70_bounty_V
+					name = "Q70_bounty_V"
 					duration = -1
 				}
 	
@@ -277,7 +277,7 @@ country_event = {
 				}
 		}
 		add_country_modifier = {
-					name = Q70_bounty_VI
+					name = "Q70_bounty_VI"
 					duration = -1
 				}
 	
@@ -305,7 +305,7 @@ country_event = {
 			}
 		}
 		add_country_modifier = {
-					name = Q70_bounty_VII
+					name = "Q70_bounty_VII"
 					duration = -1
 				}
 	

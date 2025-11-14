@@ -1510,7 +1510,7 @@ kravigozles_mission_89 = {
 		}
 		
 		add_country_modifier = { 
-					name = Q70_khet
+					name = "Q70_khet"
 					duration = 9125
 				}
 	
