@@ -158,6 +158,10 @@
  loop_generic_balanced_I:0 "First Compromise"
  loop_generic_balanced_II:0 "Arcane Harmony"
  
+ loop_generic_artificers_cd:0 "Artificial Ressource Drain"
+ loop_generic_magic_cd:0 "Restructure Magical Hierarchies"
+ loop_generic_balanced_cd:0 "Negotiate a Charter"
+ 
  tt_default_magic:0 "We will permanently chose a purist stance and reject all kinds or artificery!"
  tt_default_balanced:0 "We will permanently seek balance between established magic and new artificery!"
  tt_default_artificers:0 "We will permanently chose a radical stance and reject all kinds or magic!"

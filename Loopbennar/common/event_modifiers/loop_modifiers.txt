@@ -2,7 +2,23 @@
 loop_colony_cost = {
 	local_warscore_cost_modifier = 0.75
 }
-#Magic and Artificery Path Rewards
+#Magic and Artificery Path
+
+loop_generic_artificers_cd = {
+	idea_cost = 0.05
+	global_tax_income = -0.1
+}
+
+loop_generic_balanced_cd = {
+	idea_cost = 0.025
+	technology_cost = 0.025
+	global_tax_income = -0.1
+}
+
+loop_generic_magic_cd = {
+	technology_cost = 0.05
+	global_tax_income = -0.1
+}
 
 loop_generic_artificers_I = {
 	artificers_loyalty_modifier = 0.05

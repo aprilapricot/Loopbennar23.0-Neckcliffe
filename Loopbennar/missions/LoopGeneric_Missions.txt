@@ -127,6 +127,7 @@ loopgeneric_column_1 = {
         }
 
         effect = {
+			NOT = { has_country_modifier = loop_generic_magic_cd }
 			set_country_flag = default_magic_mana
 			custom_tooltip = tt_default_magic_skill
 			add_country_modifier = {
@@ -284,6 +285,11 @@ loopgeneric_column_2 = {
 			artifice_magic_switch_to_magic_only_mode = yes
 			custom_tooltip = tt_default_magic
 			set_country_flag = default_magic_flag
+			
+			add_country_modifier = {
+						name = loop_generic_magic_cd
+						duration = 3650
+					}
         }
     }
 	
@@ -296,6 +302,7 @@ loopgeneric_column_2 = {
         }
         trigger = {
 			NOT = { has_country_flag = default_magic_mana }
+			NOT = { has_country_modifier = loop_generic_magic_cd }
         }
 
         effect = {
@@ -445,11 +452,14 @@ loopgeneric_column_3 = {
 
         }
         trigger = {
-
+			adm_tech = 7
+			treasury = 500
+			innovativeness = 10
         }
 
         effect = {
-
+			add_treasury = -500
+			change_innovativeness = 10
         }
     }
 	
@@ -466,13 +476,13 @@ loopgeneric_column_3 = {
         }
 
         effect = {
-			add_country_modifier = {
-					name = loop_generic_balanced_I
-					duration = -1
-				}
 			artifice_magic_switch_to_mixed_mode = yes
 			custom_tooltip = tt_default_balanced
 			set_country_flag = default_balanced_flag
+			add_country_modifier = {
+                        name = loop_generic_balanced_cd
+                        duration = 3650
+                    }
         }
     }
 	
@@ -484,12 +494,16 @@ loopgeneric_column_3 = {
 
         }
         trigger = {
-
+			NOT = { has_country_modifier = loop_generic_balanced_cd }
         }
 
         effect = {
 			add_dip_power = 150
 			add_splendor = 800
+			add_country_modifier = {
+					name = loop_generic_balanced_I
+					duration = -1
+				}
         }
     }
 	
@@ -620,6 +634,10 @@ loopgeneric_column_4 = {
 			artifice_magic_switch_to_artificery_only_mode = yes
 			custom_tooltip = tt_default_artificers
 			set_country_flag = default_artificers_flag
+			add_country_modifier = {
+                        name = loop_generic_artificers_cd
+                        duration = 3650
+                    }
         }
     }
 	
@@ -632,6 +650,7 @@ loopgeneric_column_4 = {
         }
         trigger = {
 			NOT = { has_country_flag = default_artificer_army }
+			NOT = { has_country_modifier = loop_generic_artificers_cd }
 
         }
 
@@ -796,6 +815,7 @@ loopgeneric_column_5 = {
         }
         trigger = {
 			NOT = { has_country_flag = default_artificer_research }
+			NOT = { has_country_modifier = loop_generic_artificers_cd }
         }
 
         effect = {
