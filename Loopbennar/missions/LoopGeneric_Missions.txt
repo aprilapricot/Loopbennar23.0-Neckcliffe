@@ -123,10 +123,12 @@ loopgeneric_column_1 = {
 
         }
         trigger = {
-
+			NOT = { has_country_flag = default_magic_skill }
         }
 
         effect = {
+			set_country_flag = default_magic_mana
+			custom_tooltip = tt_default_magic_skill
 			add_country_modifier = {
 					name = loop_generic_magic_I
 					duration = -1
@@ -293,10 +295,12 @@ loopgeneric_column_2 = {
 
         }
         trigger = {
-
+			NOT = { has_country_flag = default_magic_mana }
         }
 
         effect = {
+			set_country_flag = default_magic_mana
+			custom_tooltip = tt_default_magic_mana
 			add_country_modifier = {
 					name = loop_generic_magic_III
 					duration = -1
@@ -627,10 +631,13 @@ loopgeneric_column_4 = {
 
         }
         trigger = {
+			NOT = { has_country_flag = default_artificer_army }
 
         }
 
         effect = {
+			set_country_flag = default_artificer_research
+			custom_tooltip = tt_default_artificer_research
 			add_country_modifier = {
 					name = loop_generic_artificers_I
 					duration = -1
@@ -788,10 +795,12 @@ loopgeneric_column_5 = {
 
         }
         trigger = {
-
+			NOT = { has_country_flag = default_artificer_research }
         }
 
         effect = {
+			set_country_flag = default_artificer_army
+			custom_tooltip = tt_default_artificer_army
 			add_country_modifier = {
 					name = loop_generic_artificers_III
 					duration = -1

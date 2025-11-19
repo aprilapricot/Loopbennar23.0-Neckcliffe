@@ -162,6 +162,12 @@
  tt_default_balanced:0 "We will permanently seek balance between established magic and new artificery!"
  tt_default_artificers:0 "We will permanently chose a radical stance and reject all kinds or magic!"
  
+ tt_default_artificer_research:0 "This will make the other Artifice Specialization impossible."
+ tt_default_artificer_army:0 "This will make the other Artifice Specialization impossible."
+ tt_default_magic_mana:0 "This will make the other Magical Specialization impossible."
+ tt_default_magic_skill:0 "This will make the other Magical Specialization impossible."
+ 
+ 
  loop_default_AM_title:0 "Paths of Power"
  loop_default_AM_desc:0 ""
  
@@ -182,7 +188,7 @@
  loop_default_artificers_research1_desc:0 ""
  loop_default_artificers_research2_title:0 "Nexus of Knowledge"
  loop_default_artificers_research2_desc:0 ""
- loop_default_artificers_army1_title:0 "Military-Artifical Complex"
+ loop_default_artificers_army1_title:0 "Military Artifical Complex"
  loop_default_artificers_army1_desc:0 ""
  loop_default_artificers_army2_title:0 "Steel Legion"
  loop_default_artificers_army2_desc:0 ""
