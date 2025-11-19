@@ -12,14 +12,14 @@ loop_generic_artificers_I = {
 
 loop_generic_artificers_II = {
 	artificers_loyalty_modifier = 0.1
-	artificers_research_time = 0.3
+	artificers_research_time = 0.2
 	artificers_capacity = 15
 }
 
 loop_generic_artificers_III = {
 	artificers_loyalty_modifier = 0.05
 	allowed_rajput_fraction = 0.05
-}
+}	
 
 loop_generic_artificers_IV = {
 	artificers_loyalty_modifier = 0.1
@@ -52,7 +52,7 @@ loop_generic_magic_I = {
 loop_generic_magic_II = {
 	mages_loyalty_modifier = 0.1
 	mages_estate_experience_mod = 0.2
-	max_estate_spell_levels = 3
+	max_estate_spell_levels = 2
 }
 
 loop_generic_magic_III = {
