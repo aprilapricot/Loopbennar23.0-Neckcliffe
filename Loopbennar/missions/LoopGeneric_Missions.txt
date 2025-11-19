@@ -467,8 +467,8 @@ loopgeneric_column_3 = {
 					duration = -1
 				}
 			artifice_magic_switch_to_mixed_mode = yes
-			custom_tooltip = tt_default_balanced_flag
-			set_country_flag = default_balanced
+			custom_tooltip = tt_default_balanced
+			set_country_flag = default_balanced_flag
         }
     }
 	
