@@ -145,3 +145,15 @@
  flavor_loopgeneric.10.d:0 "As the fury of the Greentide subsides and adventurer and orc alike begin to settle, our mages can now begin dedicating time to magical research and projects once again!" 
  flavor_loopgeneric.10.a:0 "Let's hit the tomes!" 
  loop_magical_surge:0 "Magical Study Surge"
+ 
+ #Generic Tree Magic/Artificery
+ loop_generic_artificers_I:0 "Thought-Experiment"
+ loop_generic_artificers_II:0 "Eureka"
+ loop_generic_artificers_III:0 "Iron Guards"
+ loop_generic_artificers_IV:0 "Steel Legion"
+ loop_generic_magic_I:0 "College of Magic"
+ loop_generic_magic_II:0 "Arcane Academia"
+ loop_generic_magic_III:0 "Spell Storing"
+ loop_generic_magic_IV:0 "Mana Batteries"
+ loop_generic_balanced_I:0 "First Compromise"
+ loop_generic_balanced_II:0 "Arcane Harmony"

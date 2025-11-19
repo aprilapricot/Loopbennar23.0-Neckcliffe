@@ -2,7 +2,76 @@
 loop_colony_cost = {
 	local_warscore_cost_modifier = 0.75
 }
+#Magic and Artificery Path Rewards
 
+loop_generic_artificers_I = {
+	artificers_loyalty_modifier = 0.05
+	artificers_research_time = 0.1
+	artificers_capacity = 5
+}
+
+loop_generic_artificers_II = {
+	artificers_loyalty_modifier = 0.1
+	artificers_research_time = 0.3
+	artificers_capacity = 15
+}
+
+loop_generic_artificers_III = {
+	artificers_loyalty_modifier = 0.05
+	allowed_rajput_fraction = 0.05
+}
+
+loop_generic_artificers_IV = {
+	artificers_loyalty_modifier = 0.1
+	allowed_rajput_fraction = 0.15
+}
+
+loop_generic_balanced_I = {
+	artificers_loyalty_modifier = 0.025
+	mages_loyalty_modifier = 0.025
+	allowed_rajput_fraction = 0.025
+	artificers_capacity = 2
+	mages_mana_capacity = 10
+}
+
+loop_generic_balanced_II = {
+	artificers_loyalty_modifier = 0.05
+	mages_loyalty_modifier = 0.05
+	allowed_rajput_fraction = 0.05
+	artificers_capacity = 5
+	mages_mana_capacity = 20
+}
+
+
+loop_generic_magic_I = {
+	mages_loyalty_modifier = 0.05
+	mages_estate_experience_mod = 0.1
+	max_estate_spell_levels = 1
+}
+
+loop_generic_magic_II = {
+	mages_loyalty_modifier = 0.1
+	mages_estate_experience_mod = 0.2
+	max_estate_spell_levels = 3
+}
+
+loop_generic_magic_III = {
+	mages_loyalty_modifier = 0.05
+	mages_mana_regen = 0.01
+	mages_mana_capacity = 30
+	
+}
+
+loop_generic_magic_IV = {
+	mages_loyalty_modifier = 0.1
+	mages_mana_regen = 0.03
+	mages_mana_capacity = 60
+}
+
+	
+loop_colony_cost = {
+	local_warscore_cost_modifier = 0.75
+}
 	
 loopvisor_cooldown = { }
 

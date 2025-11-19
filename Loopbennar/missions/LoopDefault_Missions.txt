@@ -3,7 +3,6 @@ loopdefault_slot_1 = {
 	generic = yes
 	ai = yes
 	potential = { 
-			tag = Z28
 	}
 
     loop_default_1 = {
@@ -63,7 +62,6 @@ loopdefault_slot_2 = {
 	generic = yes
 	ai = yes
 	potential = { 
-			tag = Z28
 	}
 
      loop_default_2 = {
@@ -112,7 +110,6 @@ loopdefault_slot_3 = {
 	generic = yes
 	ai = yes
 	potential = { 
-			tag = Z28
 	}
 
     loop_default_3 = {
@@ -179,7 +176,6 @@ loopdefault_slot_4 = {
 	generic = yes
 	ai = yes
 	potential = { 
-			tag = Z28
 	}
 
     loop_default_4 = {
@@ -243,7 +239,6 @@ loopdefault_slot_5 = {
 	generic = yes
 	ai = yes
 	potential = { 
-			tag = Z28
 	}
 
     loop_default_5 = {
