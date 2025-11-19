@@ -276,9 +276,12 @@ loopgeneric_column_2 = {
 
         }
         trigger = {
-			artificery_locked_mixed_mode = no
-			artificery_locked_artificery_mode = no
-			artificery_tag_needs_artificers = no
+			NOT = {
+			artificery_locked_mixed_mode = yes
+			artificery_locked_artificery_mode = yes
+			artificery_tag_needs_artificers = yes
+			}
+		has_country_modifier = magical_infrastructure_2
         }
 
         effect = {
@@ -471,8 +474,10 @@ loopgeneric_column_3 = {
 
         }
         trigger = {
-			artificery_locked_mage_mode = no
-			artificery_locked_artificery_mode = no
+			NOT = {
+			artificery_locked_mage_mode = yes
+			artificery_locked_artificery_mode = yes
+			}
         }
 
         effect = {
@@ -625,9 +630,12 @@ loopgeneric_column_4 = {
 
         }
         trigger = {
-			artificery_locked_mage_mode = no
-			artificery_locked_mixed_mode = no
-			artificery_tag_needs_mages = no
+			NOT = {
+			artificery_locked_mixed_mode = yes
+			artificery_locked_mage_mode = yes
+			artificery_tag_needs_mages = yes
+			}
+			has_estate = estate_artificers
         }
 
         effect = {
