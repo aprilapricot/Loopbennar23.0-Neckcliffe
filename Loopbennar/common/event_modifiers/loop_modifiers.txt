@@ -73,14 +73,14 @@ loop_generic_magic_II = {
 
 loop_generic_magic_III = {
 	mages_loyalty_modifier = 0.05
-	mages_mana_regen = 0.01
+	mages_mana_regen = 0.2
 	mages_mana_capacity = 30
 	
 }
 
 loop_generic_magic_IV = {
 	mages_loyalty_modifier = 0.1
-	mages_mana_regen = 0.03
+	mages_mana_regen = 0.5
 	mages_mana_capacity = 60
 }
 
