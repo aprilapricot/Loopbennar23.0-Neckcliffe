@@ -5097,7 +5097,7 @@ Z39_ideas = {
 A74_ideas = {
 	start = {
 		development_cost = -0.1
-		colonists = 1
+		land_morale = 0.05
 	}
 	bonus = {
 		global_trade_power = 0.10
