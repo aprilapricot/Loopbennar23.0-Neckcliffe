@@ -1138,6 +1138,8 @@ ahudazar_5 = {
         }
 
         effect = {
+		add_manpower = 8
+		add_treasury = 80
 				5668 = { 
 					add_base_production = 3
 					kill_units = {
