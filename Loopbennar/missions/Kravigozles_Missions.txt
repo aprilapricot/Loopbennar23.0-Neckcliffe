@@ -697,7 +697,7 @@ kravigozles_mission_27 = {
 
         effect = {
 			add_country_modifier = {
-				name = "Q70_panic"
+				name = "Q70_feed"
 				duration = -1			
 			}
         }
