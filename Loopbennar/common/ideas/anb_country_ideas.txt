@@ -17300,17 +17300,17 @@ Y64_ideas = {
 		naval_forcelimit_modifier = 0.33
 	}
 	Y64_battle_of_tracaisinh = { #Pinghoi seized the main port of Hon Sai and their modern capital from the sea
-		siege_blockade_progress = 1
+		shock_damage_received = -0.15
 	}
 	Y64_pirates_due = { #Demanding tribute and taxes from coastal villages
-		global_tax_modifier = 0.1
+		allowed_marine_fraction = 0.35
+		global_sailors_modifier = 0.35
 	}
 	Y64_the_widows_web = { #Ping Shuang was a master plotter who's connections continue to serve Pinghoi long after her death
-		spy_offence = 0.25
+		siege_blockade_progress = 1
 	}
 	Y64_tung_hoijungsi = { #Marine corp of Pinghoi
-		allowed_marine_fraction = 0.35
-		global_sailors_modifier = 0.1
+		global_tax_modifier = 0.1
 	}
 	Y64_queens_code = { #The pirate code of Ping Shuang dictating the rules of the fleet, adapted into the laws of Pinghoi
 		global_unrest = -1
@@ -22889,7 +22889,7 @@ U68_ideas = {
 	}
 	
 	bonus = {
-		candidate_random_bonus = 1 #republican traditions and laws ensure able candidates
+		infantry_power = 0.1 #republican traditions and laws ensure able candidates
 	}
 	
 	trigger = {
@@ -22915,7 +22915,7 @@ U68_ideas = {
 		morale_damage_received = -0.1
 	}
 	U68_paradise_carnival= { #yearly celebrations for all manner of things, and an excuse to party and meet potential partners, for business or more personal matters
-		global_trade_power = 0.1
+		development_cost = 0.1
 	}
 	U68_right_to_beauty = { #beauty as a right, big funding and stipends for all sorts of cosmetics and research
 		global_unrest = -2
@@ -38514,11 +38514,11 @@ Y42_ideas = {
     }
 	free = yes
     Y42_paramount_spring = {
-        tolerance_own = 2
+        development_cost = -0.05
     }
 
     Y42_spring_guardians = {
-        morale_damage_received = -0.1
+        morale_damage_received = -0.15
     }
 
 	Y42_spirit_pact = {
