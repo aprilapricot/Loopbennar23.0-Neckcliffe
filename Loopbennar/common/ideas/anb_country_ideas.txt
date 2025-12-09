@@ -22915,7 +22915,7 @@ U68_ideas = {
 		morale_damage_received = -0.1
 	}
 	U68_paradise_carnival= { #yearly celebrations for all manner of things, and an excuse to party and meet potential partners, for business or more personal matters
-		development_cost = 0.1
+		development_cost = -0.1
 	}
 	U68_right_to_beauty = { #beauty as a right, big funding and stipends for all sorts of cosmetics and research
 		global_unrest = -2
