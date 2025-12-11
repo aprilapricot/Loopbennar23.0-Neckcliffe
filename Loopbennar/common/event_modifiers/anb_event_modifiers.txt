@@ -20,7 +20,6 @@ pioneer_rush = {
 	colonists = 1
 	may_explore = yes
 	global_colonial_growth = 20
-	global_tax_income = 48 # Cost of the colonists, 1 here, 1 from exploration
 	idea_cost = -0.25 #To help catch up since you lose the ideas unlocked in the country of origin
 }
 
