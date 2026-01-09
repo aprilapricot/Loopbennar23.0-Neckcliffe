@@ -418,9 +418,6 @@ form_lejdazamh = {
 				has_country_modifier = centaur_administration
 			}
 			#is_year = 1500
-			OR = {
-				
-			}
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				value = 3
