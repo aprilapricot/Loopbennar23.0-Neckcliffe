@@ -417,19 +417,9 @@ form_lejdazamh = {
 			hidden_trigger = {
 				has_country_modifier = centaur_administration
 			}
-			is_subject = no
 			#is_year = 1500
 			OR = {
-				custom_trigger_tooltip = {
-					tooltip = taryeanzamh_maslekhuga_requirement
-					AND = {
-						religion = irdaeos_worship
-						religious_school = {
-								group = centaur_religion
-								school = maslekhuga_school
-							}
-					}
-				}
+				
 			}
 			is_at_war = no
 			num_of_owned_provinces_with = {
