@@ -629,71 +629,8 @@ merc_aakhetan_dragonguard = {
 	}
 }
 
-#Deshak Warriors (Akasik)
-merc_deshak_warriors = {
-    regiments_per_development = 0.03
-	cavalry_weight = 0.1
-	artillery_weight = 0.1
-	cavalry_cap = 4
-	home_province = 382
-	sprites = { akasi_units_pack }
-    trigger = {
-		NOT = { has_country_modifier = monstrous_nation}
-		NOT = { has_country_modifier = centaur_military }
-		OR = {
-			capital_scope = { 
-				OR = {
-					superregion = north_salahad_superregion 
-					region = east_dameshead_region
-					region = west_dameshead_region
-					region = lencenor_region
-					region = businor_region
-				}
-			}
-			any_owned_province = { region = akasik_region }
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		}
-	}
-	cost_modifier = 1
-	modifier = {
-	}
-}
-#Daughters of Akasik - amazon woman army
-merc_daughters_of_akasik = {
-    regiments_per_development = 0.04
-    cavalry_weight = 0.1
-    artillery_weight = 0.3
-	cavalry_cap = 2
-	home_province = 402
-	sprites = { akasi_units_pack }
-    trigger = {
-		NOT = { has_country_modifier = monstrous_nation }
-		NOT = { has_country_modifier = centaur_military }
-		capital_scope = {
-			OR = {
-				superregion = north_salahad_superregion 
-				region = east_dameshead_region
-				region = west_dameshead_region
-				region = lencenor_region
-				region = businor_region
-			}
-		}
-		402 = { 	#owner of the prov aint a monstrous nation
-			is_city = yes
-			owner = { 
-				NOT = { has_country_modifier = monstrous_nation } 
-			}
-		}
-		
-	}
-	cost_modifier = 1.15
-	modifier = {
-		shock_damage_received = -0.15
-        may_recruit_female_generals = yes
-        female_advisor_chance = 1.0
-	}
-}
+
+
 
 
 ##################
