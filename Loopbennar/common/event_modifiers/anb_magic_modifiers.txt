@@ -570,20 +570,22 @@ abjuration_1_ward_mod_0 = {
 	picture = "abjuration_mod_icon_spell_modifier"
 }
 abjuration_1_ward_mod_1 = {
-	local_defensiveness = 0.5
+	local_defensiveness = 0.33
 	local_fort_maintenance_modifier = -0.5
 	local_hostile_movement_speed = -0.33
 	picture = "abjuration_mod_icon_spell_modifier"
 }
 abjuration_1_ward_mod_2 = {
-	local_defensiveness = 0.5
+	local_defensiveness = 0.66
 	local_fort_maintenance_modifier = -0.5
+	local_hostile_movement_speed = -0.33
 	local_development_cost = -0.1
 	picture = "abjuration_mod_icon_spell_modifier"
 }
 abjuration_1_ward_mod_3 = {
-	local_defensiveness = 0.5
+	local_defensiveness = 0.9
 	local_fort_maintenance_modifier = -0.5
+	local_hostile_movement_speed = -0.33
 	local_development_cost = -0.1
 	picture = "abjuration_mod_icon_spell_modifier"
 }
