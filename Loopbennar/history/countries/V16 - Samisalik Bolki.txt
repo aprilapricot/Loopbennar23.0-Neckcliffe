@@ -1,20 +1,9 @@
 government = tribal
-add_government_reform = sb_hill_troll_tribe_reform
+add_government_reform = steppe_horde
 government_rank = 1
 primary_culture = hill_troll
-religion = neokttareum
+religion = un_khudai
 technology_group = tech_hill_troll
 capital = 5335
 
-1444.11.11 = {
-	monarch = {
-		name = "Reetghil"
-		birth_date = 1421.04.17
-		adm = 4
-		dip = 3
-		mil = 5
-	}
-}
-
-add_mil_tech = 1
-change_innovativeness = -4
+1000.1.1 = { set_country_flag = semi_monstrous }
