@@ -124,6 +124,7 @@ country_event = {
 		NOT = { adm = 2 }
 		NOT = { luck = yes }
 		has_regency = no
+		NOT = { has_estate_privilege = artifice_invention_incantation_bowls }
 	}
 
 	mean_time_to_happen = {
@@ -386,13 +387,13 @@ country_event = {
 				}
 				1 = {
 					trigger = {
-						is_female = no
+						ruler_attracted_to_women = yes
 					}
 					set_country_flag = court_scandal_2
 				}
 				1 = {
 					trigger = {
-						is_female = yes
+						ruler_attracted_to_men = yes
 					}
 					set_country_flag = court_scandal_3
 				}
@@ -1774,6 +1775,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -1890,16 +1895,16 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = { has_estate = estate_burghers }
-			NOT = { has_estate = estate_vaisyas }
+			# NOT = { has_estate = estate_vaisyas }
 		}
 		desc = "EVTDESC5051"
 	}
 	desc = {
 		trigger = {
-			OR = {
+			# OR = {
 				has_estate = estate_burghers
-				has_estate = estate_vaisyas
-			}
+				# has_estate = estate_vaisyas
+			# }
 		}
 		desc = event.5051.desc
 	}
@@ -1918,19 +1923,23 @@ country_event = {
 				}
 			}
 		}
-		else_if = {
-			limit = { has_estate = estate_vaisyas }
-			NOT = {
-				estate_loyalty = {
-					estate = estate_vaisyas
-					loyalty = 30
-				}
-			}
-		}
+		# else_if = {
+		# 	limit = { has_estate = estate_vaisyas }
+		# 	NOT = {
+		# 		estate_loyalty = {
+		# 			estate = estate_vaisyas
+		# 			loyalty = 30
+		# 		}
+		# 	}
+		# }
 	}
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	immediate = {
@@ -1964,16 +1973,16 @@ country_event = {
 					}
 				}
 			}
-			modifier = {
-				factor = 0
-				has_estate = estate_vaisyas
-				NOT = {
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 30
-					}
-				}
-			}
+			# modifier = {
+			# 	factor = 0
+			# 	has_estate = estate_vaisyas
+			# 	NOT = {
+			# 		estate_loyalty = {
+			# 			estate = estate_burghers
+			# 			loyalty = 30
+			# 		}
+			# 	}
+			# }
 		}
 		reduce_estate_burghers_loyalty_effect = yes
 		if = {
@@ -2070,6 +2079,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	immediate = {
@@ -2168,19 +2181,23 @@ country_event = {
 				}
 			}
 		}
-		else_if = {
-			limit = { has_estate = estate_vaisyas }
-			NOT = {
-				estate_loyalty = {
-					estate = estate_vaisyas
-					loyalty = 30
-				}
-			}
-		}
+		# else_if = {
+		# 	limit = { has_estate = estate_vaisyas }
+		# 	NOT = {
+		# 		estate_loyalty = {
+		# 			estate = estate_vaisyas
+		# 			loyalty = 30
+		# 		}
+		# 	}
+		# }
 	}
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -2319,6 +2336,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -2497,6 +2518,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -2680,6 +2705,10 @@ country_event = {
 		modifier = {
 			factor = 0.25
 			capital_scope = { continent = serpentspine }
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
 		}
 	}
 
@@ -3118,11 +3147,11 @@ country_event = {
 		government = monarchy
 		NOT = { dip = 3 }
 		is_free_or_tributary_trigger = yes
-		OR = {
+		# OR = {
 			has_estate = estate_nobles
-			has_estate = estate_rajput
-			has_estate = estate_maratha
-		}
+			# has_estate = estate_rajput
+			# has_estate = estate_maratha
+		# }
 	}
 
 	mean_time_to_happen = {
@@ -3420,6 +3449,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -3492,11 +3525,11 @@ country_event = {
 		is_lesser_in_union = no
 		NOT = { has_country_modifier = tax_income_boost }
 		NOT = { government = tribal }
-		OR = {
+		# OR = {
 			has_estate = estate_nobles
-			has_estate = estate_rajput
-			has_estate = estate_maratha
-		}
+			# has_estate = estate_rajput
+			# has_estate = estate_maratha
+		# }
 		any_neighbor_country = {
 			NOT = { is_rival = ROOT }
 			NOT = { trade_embargo_by = ROOT }
@@ -3701,11 +3734,11 @@ country_event = {
 		government = monarchy
 		num_of_cities = 2
 		NOT = { has_country_modifier = old_rights_granted_to_nobility }
-		OR = {
+		# OR = {
 			has_estate = estate_nobles
-			has_estate = estate_rajput
-			has_estate = estate_maratha
-		}
+			# has_estate = estate_rajput
+			# has_estate = estate_maratha
+		# }
 		if = {
 			limit = {
 				has_estate = estate_nobles
@@ -3717,32 +3750,36 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				has_estate = estate_rajput
-			}
-			NOT = {
-				num_of_estate_privileges = {
-					estate = estate_rajput
-					value = 5
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_maratha
-			}
-			NOT = {
-				num_of_estate_privileges = {
-					estate = estate_maratha
-					value = 5
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		has_estate = estate_rajput
+		# 	}
+		# 	NOT = {
+		# 		num_of_estate_privileges = {
+		# 			estate = estate_rajput
+		# 			value = 5
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		has_estate = estate_maratha
+		# 	}
+		# 	NOT = {
+		# 		num_of_estate_privileges = {
+		# 			estate = estate_maratha
+		# 			value = 5
+		# 		}
+		# 	}
+		# }
 	}
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -3825,6 +3862,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -5945,7 +5986,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 1	
+		days = 1
 	}
 
 	option = {
@@ -6013,6 +6054,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -6155,6 +6200,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 0.1
+			has_country_flag = less_chance_of_bad_stab_events
+		}
 	}
 
 	option = {
@@ -6445,11 +6494,11 @@ country_event = {
 		NOT = {	has_ruler_modifier = power_to_nobles	}
 		NOT = {	has_ruler_modifier = power_to_provinces	}
 		ruler_is_not_lich = yes 				#Anbennar
-		OR = {
+		# OR = {
 			has_estate = estate_nobles
-			has_estate = estate_rajput
-			has_estate = estate_maratha
-		}
+		# 	has_estate = estate_rajput
+		# 	has_estate = estate_maratha
+		# }
 	}
 
 	mean_time_to_happen = {
@@ -6532,11 +6581,11 @@ country_event = {
 			is_city = yes
 			is_core = root
 		}
-		OR = {
+		# OR = {
 			has_estate = estate_nobles
-			has_estate = estate_rajput
-			has_estate = estate_maratha
-		}
+		# 	has_estate = estate_rajput
+		# 	has_estate = estate_maratha
+		# }
 	}
 
 	mean_time_to_happen = {
@@ -13013,6 +13062,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+		modifier = {
+			factor = 20
+			has_country_flag = G61_good_wine # Kimanis
+		}
 	}
 
 	option = {
@@ -13030,6 +13083,19 @@ country_event = {
 			duration = 730
 		}
 		add_piety = -0.10
+		if = {
+			limit = { has_country_flag = G61_good_wine } # Kimanis
+			add_years_of_owned_provinces_production_income = {
+				years = 2
+				trigger = {
+					OR = {
+						trade_goods = wine
+						trade_goods = dyes
+					}
+				}
+				custom_tooltip = G61_gain_money_vintage_tt
+			}
+		}
 	}
 	option = {
 		highlight = yes
@@ -13057,6 +13123,7 @@ country_event = {
 
 	trigger = {
 		wine  = 1
+		NOT = { has_country_flag = G61_good_wine }
 	}
 
 	is_triggered_only = yes
