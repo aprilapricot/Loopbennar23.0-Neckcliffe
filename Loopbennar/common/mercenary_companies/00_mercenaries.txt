@@ -6,6 +6,7 @@ merc_greentide_early_arquebusiers = {
 	sprites = { dlc103_sav_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -27,6 +28,7 @@ merc_lilac_wars_veterans = {
 	sprites = { westerngfx_sprite_pack  }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -40,8 +42,73 @@ merc_lilac_wars_veterans = {
 	}
 }
 
+#Lencenor and Surrounds
 
+#Roilsardi Company (Roilsard) - equivalent of our flemish band, consistent merc culture
+merc_roilsardi_company = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.2
+	artillery_weight = 0.4
+	cavalry_cap = 2
+    home_province = 59
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				superregion = western_cannor_superregion
+			}
+			any_owned_province = {
+				region = lencenor_region
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+	}
+	modifier = {
+        infantry_power = 0.05
+	}
+}
 
+#Saloren Swordmasters (Roilsard) - early game roilsard mercs, good at swords
+merc_saloren_swordmasters = {
+    regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.1
+	cavalry_cap = 2
+    home_province = 32
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				superregion = western_cannor_superregion
+				NOT = { region = alenic_frontier_region }
+			}
+			any_owned_province = {
+				region = lencenor_region
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		custom_trigger_tooltip = {
+			tooltip = no_new_mercs_tt
+			NOT = { has_global_flag = new_european_mercs }
+		}
+	}
+	modifier = {
+        shock_damage = 0.05
+	}
+}
 
 #Vivinmar Cavaliers (Roilsard) - late game roilsard mercs, think pistoliers
 merc_vivinmar_cavaliers = {
@@ -53,6 +120,7 @@ merc_vivinmar_cavaliers = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -81,13 +149,181 @@ merc_vivinmar_cavaliers = {
 	}
 }
 
+#Enteben Free Riders (Lorentish Flats) - elite native enteben riders. they have the blood of horselords
+merc_enteben_free_riders = {
+    regiments_per_development = 0.02
+    cavalry_weight = 0.6
+	cavalry_cap = 6
+    home_province = 96
+	cost_modifier = 1.1
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				superregion = western_cannor_superregion
+				NOT = { region = alenic_frontier_region }
+			}
+			any_owned_province = {
+				region = lencenor_region
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+	}
+	modifier = {
+		cavalry_power = 0.1
+	}
+}
+
+#Shorthelms (Small Country) - halflings with heavy armour. very famous halfling mercs
+merc_shorthelms = {
+    regiments_per_development = 0.03
+    home_province = 7 #Hardoaks
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		
+		capital_scope = { 
+			superregion = western_cannor_superregion
+		}
+		151 = {
+			is_cannorian_halfling_culture = yes
+		}
+		
+		custom_trigger_tooltip = {
+			tooltip = no_new_mercs_tt
+			NOT = { has_global_flag = new_european_mercs }
+		}
+	}
+	cost_modifier = 1.1
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}
+
+#Small Company (Small Country) - a cheap halfling merc but lots of em
+merc_small_company = {
+    regiments_per_development = 0.06
+	artillery_weight = 0.1
+    home_province = 159
+	sprites = { westerngfx_sprite_pack }
+    trigger = { 
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { superregion = western_cannor_superregion }
+			any_owned_province = { region = small_country_region }
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+	}
+	cost_modifier = 0.9
+	modifier = { 
+		land_morale = -0.05
+	}
+}
 
 
+#Anbennar
 
+# Chipped Tooth Company - infamous half-orc mercs
+merc_chipped_tooth_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.1
+	cavalry_cap = 2
+	home_province = 8
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			AND = {
+				capital_scope = { 
+					OR = {
+						superregion = western_cannor_superregion 
+					}
+				}
+				NOT = { has_global_flag = remove_merc_chipped_tooth_company }
+			}
+			#add gray orcs here later
+			AND = {
+				has_country_modifier = mercenaries_to_the_standard
+				NOT = { has_global_flag = remove_merc_chipped_tooth_company }
+			}
+			AND = {
+				has_country_modifier = glut_of_mercs
+				NOT = { has_global_flag = remove_merc_chipped_tooth_company }
+			}
+			AND = {
+				capital_scope = {
+					superregion = ynn_superregion
+				}
+				OR = {
+					H58 = {
+						exists = yes
+					}
+					H59 = {
+						exists = yes
+					}
+				}
+			}
+		}
+	}
+	cost_modifier = 1.4
+	modifier = {
+		shock_damage = 0.3
+		infantry_fire = -0.1
+	}
+}
 
-
-
-
+# Havoral Band - bandits and vagrants turned mercs
+merc_havoral_band = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.1
+	cavalry_cap = 2
+	home_province = 909
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = western_cannor_superregion 
+					region = forlorn_vale_region 
+				}
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		NOT = { has_global_flag = remove_merc_havoral_band }
+	}
+	cost_modifier = 1.1
+	modifier = {
+		land_attrition = -0.1
+	}
+}
 
 # Menibor Free Company - big cheap boy army, a must get before they leave! this is where a lot of vernmen adventurers end up
 merc_menibor_free_company = {
@@ -99,6 +335,7 @@ merc_menibor_free_company = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -129,6 +366,7 @@ merc_pinklady_band = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		NOT = { has_global_flag = new_pinklady_band }
 		owns_core_province = 280
@@ -140,6 +378,39 @@ merc_pinklady_band = {
 	}
 }
 
+# Dwarven Cartel Mercenaries (Esmaria) - dwarven tough lads
+merc_dwarven_cartel_mercenaries = {
+    regiments_per_development = 0.02
+	artillery_weight = 0.2
+	home_province = 308
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = western_cannor_superregion 
+					region = dostanor_region
+				}
+			}
+			any_owned_province = { region = esmaria_region }
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+	}
+	cost_modifier = 1.2
+	modifier = {
+		shock_damage_received = -0.3
+		reinforce_speed = -0.5
+	}
+}
 
 # Crestless (Esmaria) - asheniander army without any flags. its a private army for hire.
 merc_the_crestless = {
@@ -152,6 +423,7 @@ merc_the_crestless = {
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = {
@@ -180,6 +452,44 @@ merc_the_crestless = {
 	}
 }
 
+#Wexonard Greatswords (The Borders) - zweihanders
+merc_wexonard_greatswords = {
+    regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	home_province = 306
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = western_cannor_superregion 
+					region = dostanor_region
+				}
+			}
+			any_owned_province = { region = the_borders_region }
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+		
+		custom_trigger_tooltip = {
+			tooltip = no_new_mercs_tt
+			NOT = { has_global_flag = new_european_mercs }
+		}
+	}
+	cost_modifier = 1.1
+	modifier = {
+		shock_damage = 0.05
+	}
+}
 
 #Bardswood Hunter Company (The Borders) - Skirmishers
 merc_bardswood_hunter_company = {
@@ -191,6 +501,7 @@ merc_bardswood_hunter_company = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -221,6 +532,39 @@ merc_bardswood_hunter_company = {
 	}
 }
 
+#Vernmen Adventurers (East Dameshead) - just a adventurer company
+merc_vernmen_adventurers = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.3
+	cavalry_cap = 5
+	home_province = 286
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = western_cannor_superregion
+				}
+				NOT = { region = alenic_frontier_region }
+			}
+			any_owned_province = { 
+				OR = {
+					region = east_dameshead_region 
+					region = akasik_region
+				}
+			}
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	cost_modifier = 0.75
+	modifier = {
+		discipline = -0.05
+	}
+}
 
 #Rectorate's Finest (The Borders)
 merc_rectorates_finest = {
@@ -247,6 +591,7 @@ merc_moonspears = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -284,6 +629,7 @@ merc_moonspear_rifle_corps = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -315,6 +661,79 @@ merc_moonspear_rifle_corps = {
 	}
 }
 
+#Arbaran Free Company (Alenic Frontier) - arbarani adventurers
+merc_arbaran_free_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.2
+	artillery_weight = 0.1
+	cavalry_cap = 4
+	home_province = 349
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = western_cannor_superregion 
+					superregion = escann_superregion 
+					superregion = gerudia_superregion 
+					NOT = { region = lencenor_region }
+					NOT = { region = businor_region }
+				}
+			}
+			any_owned_province = { region = alenic_frontier_region }
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+	}
+	cost_modifier = 1.1
+	modifier = {
+		land_morale = 0.05
+	}
+}
+
+#Free Bladedancers (Forlorn Vale) - blaidscall dudes
+merc_independent_bladedancers = {
+    regiments_per_development = 0.01	#long lived mercs are smaller
+	home_province = 352
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				OR = {
+					superregion = western_cannor_superregion 
+					region = dostanor_region
+				}
+				NOT = { region = alenic_frontier_region }
+			}
+			any_owned_province = { region = east_dameshead_region }
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = no_new_mercs_tt
+			NOT = { has_global_flag = new_european_mercs }
+		}
+	}
+	cost_modifier = 1.1
+	modifier = {
+		shock_damage_received = -0.2
+		reinforce_speed = -0.5	#long lived mercs get this in exchange for double the buff at normal price
+	}
+}
+
+
+#Alenic Frontier and Gerudia
 
 #Moorlords (Westmoors)
 merc_moorlords = {
@@ -326,6 +745,7 @@ merc_moorlords = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -352,6 +772,42 @@ merc_moorlords = {
 	}
 }
 
+#Company of the Alen (Westmoors)
+merc_company_of_the_alen = {
+    regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	cavalry_cap = 4
+	home_province = 337
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
+		NOT = { has_country_modifier = centaur_military }
+		OR = {
+			capital_scope = { 
+				OR = {
+					region = dragon_coast_region 
+					region = alenic_frontier_region
+					superregion = western_cannor_superregion
+					superregion = gerudia_superregion
+				}
+			}
+			any_owned_province = { region = east_dameshead_region }
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+			
+			custom_trigger_tooltip = {
+				tooltip = escanni_wars_flag_tt
+				has_global_flag = escanni_wars_global_flag
+			}
+		}
+	}
+	cost_modifier = 1.1
+	modifier = {
+		reinforce_speed = 0.5	#amazing at mustering
+	}
+}
 
 #Old Alenic Woodsmen (Alenic Frontier) - hardy rural dudes
 merc_old_alenic_woodsmen = {
@@ -360,6 +816,7 @@ merc_old_alenic_woodsmen = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -401,6 +858,7 @@ merc_free_reavers = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -434,6 +892,7 @@ merc_olavish_band = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -485,6 +944,7 @@ merc_castonath_adventurers = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -516,6 +976,7 @@ merc_rohibon_free_lances = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -551,6 +1012,7 @@ merc_company_of_the_dragon = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -586,6 +1048,7 @@ merc_catelsvord_cannon_company = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -624,6 +1087,7 @@ merc_asra_cartel_mercenaries = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -653,6 +1117,7 @@ merc_exiled_rangers = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -678,6 +1143,7 @@ merc_gladewardens = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		capital_scope = { 
 			OR = {
@@ -742,6 +1208,7 @@ merc_company_of_the_crag = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -815,6 +1282,7 @@ merc_brasanni_freemen = {
 	sprites = { brasanni_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = {
@@ -845,6 +1313,7 @@ merc_shining_shields = {
 	sprites = { zanite_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = {
@@ -878,6 +1347,7 @@ merc_seg_band = {
 	sprites = { group_dwarves_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = {
@@ -921,6 +1391,7 @@ merc_kumarkandi_rangers_one = {
 	sprites = { zanite_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 			OR = {
 			capital_scope = {
@@ -949,6 +1420,7 @@ merc_kumarkandi_rangers_two = {
 	sprites = { zanite_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 			capital_scope = { superregion = bulwar_superregion }
 		has_country_flag = kumarkand_rangers_two_unlock
@@ -969,6 +1441,7 @@ merc_kumarkandi_rangers_three = {
 	sprites = { zanite_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 			capital_scope = { superregion = bulwar_superregion }
 		has_country_flag = kumarkand_rangers_three_unlock	
@@ -999,6 +1472,7 @@ merc_harpy_mercenaries = {
 		666 = {
 			culture_group = harpy
 		}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 	}
 	cost_modifier = 1.15
@@ -1036,6 +1510,7 @@ merc_siadan_riflebirds = {
 			has_global_flag = new_european_mercs
 		}
 		NOT = { has_country_modifier = monstrous_nation }
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }		
 	}
 	cost_modifier = 1.3
@@ -1113,6 +1588,7 @@ merc_landless_knights = {
 	sprites = { easterngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -1142,6 +1618,7 @@ merc_cursed_one_mercenaries = {
 	sprites = { gray_orc_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -1401,7 +1878,7 @@ merc_kherkan_guard = {
 	artillery_weight = 0.2
 	cavalry_cap = 2
 	home_province = 2773
-	sprites = { kheionai_cool_units_sprite_pack }
+	sprites = { kheionai_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
 		OR = {
@@ -1427,7 +1904,7 @@ merc_kherkan_guard = {
 merc_melnari_pikemen = {
 	regiments_per_development = 0.03
 	home_province = 2763
-	sprites = { kheionai_cool_units_sprite_pack }
+	sprites = { kheionai_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation }
 		OR = {
@@ -1939,6 +2416,7 @@ merc_batallion_of_the_beard = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -1971,6 +2449,7 @@ merc_amber_company = {
 	sprites = { group_dwarves_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -2003,6 +2482,7 @@ merc_whiteforge_vanguard = {
 	sprites = { group_dwarves_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { 
@@ -2039,6 +2519,7 @@ merc_shadow_warriors = {
 	sprites = { harimari_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { superregion = rahen_superregion }
@@ -2063,6 +2544,7 @@ merc_company_of_the_stripe = {
 	sprites = { harimari_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { superregion = rahen_superregion }
@@ -2091,6 +2573,7 @@ merc_ghankedhen_rangers = {
 	sprites = { ghankedhen_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { superregion = rahen_superregion }
@@ -2116,6 +2599,7 @@ merc_gangs_of_sarisung = {
 	sprites = { muthadhaya_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { continent = asia }
@@ -2139,6 +2623,7 @@ merc_battlebrew_slayers = {
 	sprites = { group_dwarves_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { superregion = rahen_superregion }
@@ -2164,6 +2649,7 @@ merc_exilarch_shields = {
 	sprites = { group_dwarves_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			owns = 4435
@@ -2190,6 +2676,7 @@ merc_lunthari_irregulars = {
 	sprites = { rabhidarubsad_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { superregion = rahen_superregion }
@@ -2214,6 +2701,7 @@ merc_yodhiyari_bands = {
 	sprites = { rasarhid_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = monstrous_nation}
+		NOT = { culture_group = centaur }
 		NOT = { has_country_modifier = centaur_military }
 		OR = {
 			capital_scope = { superregion = rahen_superregion }
@@ -2231,7 +2719,7 @@ merc_yodhiyari_bands = {
 ####Conjuration Mercs
 merc_feral_animals = {
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
-	regiments_per_development = 0.05
+	regiments_per_development = 0.1
 	cost_modifier = 0.01
 	cavalry_weight = 0.2
 	artillery_weight = 0
@@ -2248,7 +2736,7 @@ merc_feral_animals = {
 }
 merc_leashed_elementals = {
 	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
-	regiments_per_development = 0.04
+	regiments_per_development = 0.1
 	cost_modifier = 0.01
 	cavalry_weight = 0.33
 	artillery_weight = 0
@@ -2256,7 +2744,12 @@ merc_leashed_elementals = {
 	manpower_pool = 20
 	no_additional_manpower_from_max_size = yes
 
-	trigger = { has_cast_summon_elementals = yes }
+	trigger = {
+		has_cast_summon_elementals = yes
+		hidden_trigger = {
+			NOT = { has_country_modifier = conjuration_2_greater_summon_elementals_mod }
+		}
+	}
 
 	modifier = {
 		fire_damage_received = -0.1
@@ -2266,7 +2759,26 @@ merc_leashed_elementals = {
 
 	counts_towards_force_limit = no
 }
+merc_greater_leashed_elementals = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	regiments_per_development = 0.04
+	cost_modifier = 0.01
+	cavalry_weight = 0.33
+	artillery_weight = 0
+	max_size = 10
+	manpower_pool = 20
+	no_additional_manpower_from_max_size = yes
 
+	trigger = { has_cast_greater_summon_elementals = yes }
+
+	modifier = {
+		fire_damage_received = -0.2
+		shock_damage_received = -0.2
+		shock_damage = 0.5
+	}
+
+	counts_towards_force_limit = no
+}
 
 
 
