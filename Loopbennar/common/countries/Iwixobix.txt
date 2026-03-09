@@ -1,41 +1,40 @@
-
 #Country Name: Please see filename.
 
 graphical_culture = africangfx
 
-color = { 178  108  54 }
+color = { 63 100 85 }
 
 
 
 historical_idea_groups = {
-	exploration_ideas
-	maritime_ideas
+	defensive_ideas
+	spy_ideas
+	infrastructure_ideas
+	religious_ideas
+	trade_ideas
+	quantity_ideas
+	innovativeness_ideas		
 	economic_ideas
-	offensive_ideas
-	expansion_ideas
-	quality_ideas	
-	administrative_ideas	
-	influence_ideas
 }
 
 historical_units = {
 }
 
-monarch_names = {
+monarch_names = {	
 
 	#Fieldstalker Names
 	"Aderv #0" = 1
 	"Agizul #0" = 1
 	"Akerxhim #0" = 1
 	"Amaxhtan #0" = 1
-	"Ameqran #0" = 20
+	"Ameqran #0" = 1
 	"Badix #0" = 1
 	"Baragzen #0" = 1
 	"Bazir #0" = 1
 	"Bilbuz #0" = 1
 	"Emighar #0" = 1
 	"Eveg #0" = 1
-	"Gvazil #0" = 30
+	"Gvazil #0" = 1
 	"Huzkay #0" = 1
 	"Idriz #0" = 1
 	"Izdar #0" = 1
@@ -50,7 +49,7 @@ monarch_names = {
 	"Ozem #0" = 1
 	"Rezg #0" = 1
 	"Rilzur #0" = 1
-	"Rozherg #1" = 1
+	"Rozherg #1" = 10
 	"Ruqmez #0" = 1
 	"Rzen #0" = 1
 	"Tzuad #0" = 1
@@ -72,13 +71,13 @@ monarch_names = {
 	"Elzpit #0" = -1
 	"Henza #0" = -1
 	"Herru #0" = -1
-	"Izaba #1" = -1
+	"Izaba #1" = -10
 	"Izlan #0" = -1
 	"Kavha #0" = -1
-	"Khazet #0" = -30
+	"Khazet #0" = -1
 	"Mazza #0" = -1
 	"Menxha #0" = -1
-	"Moxota #0" = -40
+	"Moxota #0" = -1
 	"Niv #0" = -1
 	"Numidz #0" = -1
 	"Oze #0" = -1
@@ -104,7 +103,7 @@ monarch_names = {
 	"Xivul #0" = -1
 	"Zawgha #0" = -1
 	"Zegiga #0" = -1
-	"Zykari #1" = -50
+	"Zykari #0" = -1
 }
 
 leader_names = {
@@ -125,9 +124,9 @@ ship_names = {
 }
 
 army_names = {
-	"Silvertongue Tseradza" "Chaingifter Tseradza" "Twitcheye Tseradza" "$PROVINCE$ Tseradza"
+	"Bonegnawer Tseradza" "Ironpelt Tseradza" "Smokehide Tseradza" "Steeljaw Tseradza" "Forgefang Tseradza" "Scrapclaw Tseradza" "$PROVINCE$ Tseradza"
 }
 
 fleet_names = {
-	"Slavetaker Squadron" "Fleshtrader Fleet" "Coffeebreath Raiders"
+	"Patchwork Fleet" "Salvaged Squadron" "Scrap Metal Raiders" "Fleet of Kvanga"
 }

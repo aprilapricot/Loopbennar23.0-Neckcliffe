@@ -3,26 +3,26 @@
 
 graphical_culture = westerngfx
 
-color = { 121 10 65 }
+color = { 46  49  146 }
 
-
+random_nation_chance = 0
 
 historical_idea_groups = {
-	exploration_ideas
-	maritime_ideas
-	economic_ideas
-	offensive_ideas
 	expansion_ideas
-	quality_ideas	
-	administrative_ideas	
-	influence_ideas
+	exploration_ideas
+	quantity_ideas
+	diplomatic_ideas	
+	offensive_ideas
+	defensive_ideas
+	economic_ideas	
+	innovativeness_ideas
 }
 
 historical_units = {
 	cannorian_1_medieval_infantry
 	cannorian_1_medieval_knights
 	cannorian_5_men_at_arms
-	cannorian_9_pike_and_shot
+	cannorian_9_adventurer_band
 	cannorian_10_gun_knights
 	cannorian_12_thorn_formation
 	cannorian_14_outriders
@@ -35,12 +35,24 @@ historical_units = {
 	cannorian_26_dragoncoat_infantry
 	cannorian_28_impulse_infantry
 	cannorian_28_cuirassier
-	cannorian_30_drill_infantry
+	cannorian_30_sparkdrive_irregulars
 }
 
 monarch_names = {
 
-	#Sorncósti Name List
+	"Caylen #5" = 150
+	"Galien #0" = 75
+	"Galin #2" = 75
+	"Alec #3" = 70
+	"Henric #4" = 20
+	"Gelman #3" = 5
+	"Austyn #1" = 10
+	
+	"Marina #0" = -5
+	"Alina #0" = -5
+	"Adela #0" = -5
+
+	#Pealrsedger Name List
 	"Adran" = 10
 	"Adrien" = 10
 	"Adémar" = 10
@@ -83,7 +95,6 @@ monarch_names = {
 	"Gelmon" = 10
 	"Guillame" = 10
 	"Hadrien" = 10
-	"Kylian" = 10
 	"Laurens" = 10
 	"Lauthane" = 10
 	"Lucian" = 10
@@ -104,29 +115,24 @@ monarch_names = {
 	"Tomáis" = 10
 	"Trian" = 10
 	"Trystane" = 10
-	"Trystane" = 10
 	"Tustin" = 10
 	"Valen" = 10
 	"Valeran" = 10
 	"Varil" = 10
-	"Varil" = 10
-	"Varil" = 10
 	"Varion" = 10
 	"Vernell" = 10
 	"Vincent" = 10
-	"Acin" = 10
-	"Alcar" = 10
-	"Alcuin" = 10
-	"Brennes" = 10
-	"Cavin" = 10
-	"Damois" = 10
-	"Iesten" = 10
-	"Lucen" = 10
-	"Petran" = 10
-	"Samin" = 10
-	
-	
-	
+	"Alec" = 10
+	"Aron" = 10
+	"Caylen" = 10
+	"Emmund" = 10
+	"Haakon" = 10
+	"Harold" = 10
+	"Henric" = 10
+	"Serek" = 10
+
+
+
 	"Adranne" = -10
 	"Adéle" = -10
 	"Alara" = -10
@@ -178,36 +184,29 @@ monarch_names = {
 	"Thalia" = -10
 	"Valence" = -10
 	"Varinne" = -10
-	"Abuissa" = -10
-	"Abula" = -10
-	"Adanna" = -10
-	"Cata" = -10
-	"Elantia" = -10
-	"Fiona" = -10
-	"Fionca" = -10
-	"Vinda" = -10
-	"Vindilla" = -10
+	"Gyda" = -10
+	"Halla" = -10
+
 }
 
 leader_names = {
 	#Country Specific
-	"of Sorncóst" "of Southwine" "of Sornbay" "of Sornaire" "of Casna Ola" "of Fíoncavin" "of Aelhill" "of Aishill" "of Ebenuel"
 	
 	#Province Neighbours
-	"of New Adea" "of Bottlepoint" "of Wineport" "of Oldport" "of Toarnaire" "of Vivinmar" "of Minar"
+
 	
 	#Country Neighbours
-	"of Deranne" "of Lorent" "of Pearlsedge" "of Portnamm" "of Venáil" "of Tellum"
+
 	
 	#Geographic Neighbours
-	"of Bloodwine" "of Lencenor" "of Westcoast" "of the Dameshead" "of Akasik" 
+	"of Cannor" "of the Ruin" "of Noruin" "of the Isles" "of Soruin" 
 	
 	#Noble Families
-	"síl Sorncóst" "sína Fíoncavin" "síl Ebenuel" "síl Coruan" "síl Ola"
+
 	
 	#Generic Anbennarian/Elvenized
 	Auern Rósarn Fwinern Esmarn Jercostarn Redcoaster Hylern Hylman Leonarn Liatharn Dostan Grey Sfern Pearler Alen Aranern Aistern Adenern Eánarn Bladern Castanern Vrorenern Damern Reigharn Bulwarn Khetarn Lunarn Akasirn Caorarn Rever Arbern Pírandern Airge Silsuinairge Anben Báisdaerh Cestirn Dhíarn Dhenern Silvarn Fwinern Duchaelarn Pírduchaelern Séthírn Magairn Párnern Verenvítern Tenachern Dortem Trínvítern Ciobisern Ciobiscúniacern Cúwern Trédárn Crécócarn Cócarn Cúbaírn Thanasern Bocharn Aíthrn Árthavítrn Célodir Gwalvítl Annceí Deabílanneí Cuísern Mathúisern Hirn Cínndiheí Niodágern Avusrael Laoch Gaóhern Bochoch Tenachvítarn Suíréach Cófravítrn Mérgirn Grùdídhern Avusíllern Fílívítarn Cígalern Dathaí Iascirn Eúnech Flárnarn Riéntenachirn Dáineí Pígu Adarvítí Mielvítí Melefvítí Orgórn Afesgórn Eresgórn Airgegórn Eumhígórn Bíanoch Gàrd Altírí Pítse Seina Fíhl Adachí Seíththorimí Cístern Sílreianí Gal Teder Liath Deir Var Jer Cam Iruan Pash Bron Vulsin Aríth Badhál Díhr Búel Cúw Agnel Geária Oulhá Stamh 
- Rogpid Bradá Breác Eúne Melilar Bhac Derdíl Fabhn Finúch Crodach Bogeán Véirse Liubán Óbehr Sábal Ritach Bíobar Colúm Lánchs "sina Arademele" "sina Minarsdemele" "sina Damesdemele" "sina Necropolis" "sina Adensdemele" "sina Balgarstenach" "sina Fiarndemele" "sina Gráidemele" "of Builderstemple"
+ Rogpid Bradá Breác Eúne Melilar Bhac Derdíl Fabhn Finúch Crodach Bogeán Véirse Liubán Óbehr Sábal Ritach Bíobar Colúm Lánchs "sina Arademele" "sina Minarsdemele" "sina Damesdemele" "sina Necropolis" "sina Adensdemele" "sina Balgarstenach" "sina Fiarndemele" "sina Gráidemele" "of Builderstemple" 
 }
 
 ship_names = {
@@ -240,9 +239,9 @@ ship_names = {
 }
 
 army_names = {
-	"Sornic Sons Army" "Army of $PROVINCE$"
+	"Obaithian Army" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Sornic Sons Fleet" "Red Squadron" "Blue Squadron" "Green Squadron" "Orange Squadron"
+	"Obaithian Fleet"
 }
