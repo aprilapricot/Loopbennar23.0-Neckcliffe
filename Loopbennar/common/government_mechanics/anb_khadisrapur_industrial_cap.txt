@@ -72,6 +72,42 @@ khadisrapur_industry_mechanic = {
 				}
 			}
 			scaled_modifier = {
+				trigger = { mission_completed = R11_civilizing_rabble }
+				start_value = 0
+				end_value = 100
+				modifier = {
+					land_forcelimit_modifier = 0.01
+					global_trade_goods_size_modifier = 0.01
+				}
+			}
+			scaled_modifier = {
+				trigger = { mission_completed = R11_laws_indenturement }
+				start_value = 0
+				end_value = 100
+				modifier = {
+					land_forcelimit_modifier = 0.01
+					global_trade_goods_size_modifier = 0.01
+				}
+			}
+			scaled_modifier = {
+				trigger = { mission_completed = R11_black_gold }
+				start_value = 0
+				end_value = 100
+				modifier = {
+					land_forcelimit_modifier = 0.01
+					global_trade_goods_size_modifier = 0.01
+				}
+			}
+			scaled_modifier = {
+				trigger = { mission_completed = R11_god_hope }
+				start_value = 0
+				end_value = 100
+				modifier = {
+					land_forcelimit_modifier = 0.01
+					global_trade_goods_size_modifier = 0.01
+				}
+			}
+			scaled_modifier = {
 				trigger = { mission_completed = R11_sophisticated_system }
 				start_value = 0
 				end_value = 100
@@ -162,7 +198,7 @@ khadisrapur_industry_mechanic = {
 					add_country_modifier = { name = khadisrapur_empower_merchants_mod duration = -1 desc = while_policy_active }
 					if = {
 						limit = { mission_completed = R11_golden_age }
-						custom_tooltip = R11_golden_age_effect_2_tt
+						custom_tooltip = R11_golden_age_effect_3_tt
 					}
 					if = {
 						limit = { mission_completed = R11_embassies_guild }
