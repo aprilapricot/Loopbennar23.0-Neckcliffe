@@ -471,7 +471,10 @@ R11_pre_victory_3 = {
 			is_or_was_tag = { tag = R11 }
 			government_rank = 2
 			estate_loyalty = { estate = all loyalty = 60 }
-			
+			R07 = {
+				alliance_with = ROOT
+				owns = 4460
+			}
 			OR = {
 				has_commanding_three_star = yes
 				mil_power = 250
@@ -2392,6 +2395,7 @@ R11_post_victory_5 = {
 		}
 
 		effect = {
+			custom_tooltip = khadisrapur_generic_improve_gov_bar_effect_tt
 			if = {
 				limit = { NOT = { exists = R81 } }
 				R65 = { inherit = R66 }
@@ -2419,7 +2423,19 @@ R11_post_victory_5 = {
 				change_trade_goods = slaves
 			}
 			hidden_effect = {
-				
+				jade_mines_region = {
+					type = random
+					amount = 5
+					limit = {
+						OR = {
+							trade_goods = wool
+							trade_goods = livestock
+							trade_goods = serpentbloom
+						}
+					}
+					generic_add_race_minority_size_effect = { race = hobgoblin }
+					change_trade_goods = slaves
+				}
 				clr_country_flag = eligible_for_jade_rivalry_events
 			}
 		}
@@ -2472,6 +2488,7 @@ R11_post_victory_5 = {
 		}
 
 		effect = {
+			custom_tooltip = khadisrapur_generic_improve_gov_bar_effect_tt
 			create_march = R81
 			add_historical_friend = R81
 			R81 = {
@@ -2518,6 +2535,7 @@ R11_post_victory_5 = {
 				limit = { has_unembraced_institution = global_trade }
 				add_dip_power = -250
 			}
+			custom_tooltip = khadisrapur_generic_improve_gov_bar_effect_tt
 			R81 = {
 				monstrous_to_semi_monstrous_effect = yes
 				start_demonsterization_effect = yes

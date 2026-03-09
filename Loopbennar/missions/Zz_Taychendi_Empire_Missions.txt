@@ -72,6 +72,12 @@ J84_1_missions = {
 					}
 				}
 			}
+			has_estate = estate_mages
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 40
+			}
+			has_estate_privilege = estate_mages_investments_in_magical_arts
 		}
 
 		effect = {
@@ -631,7 +637,7 @@ J84_1_missions = {
 				has_building = mage_tower
 				has_building = university
 			}
-			is_not_researching_invention = yes
+			is_not_researching_or_blocked_from_researching_invention = yes
 		}
 
 		effect = {
@@ -2506,6 +2512,7 @@ J84_3_missions = {
 					OR = {
 						ruler_is_powerful_mage = yes
 						is_estate_conjuration_level_3 = yes
+						is_estate_num_school_level_3 = { amount = 2 }
 					}
 				}
 				AND = {
