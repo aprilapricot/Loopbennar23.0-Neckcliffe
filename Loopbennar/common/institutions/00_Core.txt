@@ -580,19 +580,37 @@ new_world_i = {
 			}
 			reduce_infrastructure_institution_penalty = yes
 		}
+		# start unlock of lencori behemoths
+		hidden_effect = {
+			if = {
+				limit = { NOT = { has_global_flag = lencori_behemoth } }
+				every_country = {
+					limit = {
+						OR = {
+							owns = 112
+							lencori_qualifies_for_behemoths = yes
+						}
+					}
+					country_event = { id = lencori_behemoth.1 days = 30 }
+				}
+			}
+		}
 	}
 	
 	historical_start_date = 1500.1.1
 	historical_start_province = 224 #Sevilla
 	
 	history = {
-		is_year = 1490
+		is_year = 1500
 		continent = europe
-		
+		OR = {
+			owner = { has_idea = quest_for_the_new_world }
+			owner = { colony = 1 }
+		}
 	}
 	
 	can_start = {
-		is_year = 1490
+		is_year = 1500
 		is_institution_enabled = renaissance
 		island = no
 		is_state = yes
@@ -605,6 +623,8 @@ new_world_i = {
 		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
 			OR = {
 				continent = europe
+				continent = asia
+				continent = africa
 			}
 		}
 		else_if = { limit = { NOT = { has_global_flag = delete_bulwar_region } }
@@ -749,7 +769,7 @@ new_world_i = {
 		}
 	}
 	
-	start_chance = 30		#in 100 for when a province can_start
+	start_chance = 5		#in 100 for when a province can_start
 	
 	on_start = institution_events.3
 	
