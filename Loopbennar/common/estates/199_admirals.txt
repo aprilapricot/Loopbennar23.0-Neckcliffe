@@ -1,0 +1,86 @@
+########################
+########################
+### April Neckcliffe ###
+########################
+########################
+estate_imperial_admirals = {
+	icon = 33
+	# If true, country will get estate
+	trigger = {
+		tag = A22
+		has_country_flag = neckcliffe_admirals_takeover
+	}
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_ship_cost = -0.1
+		naval_maintenance_modifier = -0.1
+		prestige_from_naval = 0.1
+	}
+	country_modifier_neutral = {
+		naval_maintenance_modifier = -0.05
+		global_ship_cost = -0.05
+		prestige_from_naval = 0.05
+	}
+	country_modifier_angry = {
+		naval_morale = -0.05
+		global_ship_cost = +0.1
+		navy_tradition = -1
+	}
+	land_ownership_modifier = {
+		imperial_admirals_loyalty_modifier = 0.2
+	}
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				is_state_core = owner
+			}
+		}
+	}
+	# Influence modifiers
+	base_influence = 0
+	# Custom Names
+	custom_name = {
+		desc = estate_imperial_admirals
+		trigger = {
+			always = yes
+		}
+	}
+	color = {
+		17
+		52
+		110
+	}
+	privileges = {
+		estate_admirals_advisor
+		estate_admirals_admiralty_board
+		estate_admirals_administrative_education
+		estate_admirals_diplomatic_education
+		estate_admirals_military_education
+		estate_admirals_control_of_trade
+		estate_admirals_integrated_druids
+		estate_admirals_dwarvish_cannons
+		estate_admirals_ironclad_hulls
+		estate_admirals_damestear_propulsion
+		estate_admirals_military_naval_doctrines
+		estate_admirals_upwards_mobility
+		estate_admirals_dual_command
+	}
+	agendas = {
+	}
+	influence_from_dev_modifier = 0.5
+}

@@ -2175,6 +2175,9 @@ country_event = {
 			NOT = { has_reform = feuillant_reform }
 			NOT = { has_reform = damescrown_republic_reform }
 			NOT = { has_reform = feiten_reformist_movement }
+			NOT = {
+				has_reform = neckcliffe_stadthalter_monarchy_reform				#April Neckcliffe
+			}
 		}
 		if = {
 			limit = {
@@ -2264,6 +2267,7 @@ country_event = {
 					has_reform = monastic_elections_reform
 					has_reform = damescrown_republic_reform
 					has_reform = raithtall_twilight_court_reform
+					has_reform = neckcliffe_stadthalter_monarchy_reform					#April Neckcliffe
 				}
 			} 
 			NOT = { has_reform = feiten_reformist_movement }
@@ -2416,8 +2420,52 @@ country_event = {
 		}
 		set_ruler_flag = raithtallTwilightTheocrat
 		change_statists_vs_orangists = 0.2
+	#April Neckcliffe
+	option = {
+		name = elections.720.neckcliffermonarchists
+		trigger = {
+			has_reform = neckcliffe_stadthalter_monarchy_reform
+		}
+		ai_chance = {
+			factor = 50
+		}
+		define_ruler = {
+			dynasty = "Cliffman"
+		}
+		change_statists_vs_orangists = 0.33
+	}
+	option = {
+		name = elections.720.neckclifferadmirals
+		trigger = {
+			has_reform = neckcliffe_stadthalter_monarchy_reform
+		}
+		ai_chance = {
+			factor = 50
+		}
+		define_ruler = {
+		}
+		if = {
+			limit = {
+				has_country_flag = imperial_admirals_administrative_education
+			}
+			change_adm = 1
+		}
+		else_if = {
+			limit = {
+				has_country_flag = imperial_admirals_diplomatic_education
+			}
+			change_dip = 1
+		}
+		else_if = {
+			limit = {
+				has_country_flag = imperial_admirals_miliray_education
+			}
+			change_mil = 1
+		}
+		change_statists_vs_orangists = -0.33
 	}
 }
+
 
 country_event = {
 	id = elections.721
@@ -2453,6 +2501,12 @@ country_event = {
 		trigger = { has_reform = raithtall_twilight_court_reform }
 		desc = elections.721.raithtall
 	}
+	desc = {
+		trigger = {
+			has_reform = neckcliffe_stadthalter_monarchy_reform			#April Neckcliffe
+		}
+		desc = elections.721.neckcliffe
+	}
 	
 	# desc = {
 	# 	trigger = {
@@ -2487,6 +2541,9 @@ country_event = {
 			NOT = { has_reform = damescrown_republic_reform }
 			NOT = { has_reform = feiten_reformist_movement }
 			NOT = { has_reform = raithtall_twilight_court_reform }
+			NOT = {
+				has_reform = neckcliffe_stadthalter_monarchy_reform				#April Neckcliffe
+			}
 		}
 		if = {
 			limit = {
@@ -2565,6 +2622,7 @@ country_event = {
 					has_reform = damescrown_republic_reform
 					has_reform = feiten_reformist_movement
 					has_reform = raithtall_twilight_court_reform
+					has_reform = neckcliffe_stadthalter_monarchy_reform				#April Neckcliffe
 				} 
 			}
 		}
@@ -2678,6 +2736,60 @@ country_event = {
 		}
 		set_ruler_flag = raithtallTwilightTheocrat
 		change_statists_vs_orangists = 0.2
+	#April Neckcliffe
+	option = {
+		name = elections.720.neckcliffenochange
+		trigger = {
+			has_reform = neckcliffe_stadthalter_monarchy_reform
+		}
+		ai_chance = {
+			factor = 50
+		}
+		add_legitimacy = -10
+		add_prestige = -10
+	}
+	option = {
+		name = elections.720.neckcliffermonarchists
+		trigger = {
+			has_reform = neckcliffe_stadthalter_monarchy_reform
+		}
+		ai_chance = {
+			factor = 50
+		}
+		define_ruler = {
+			dynasty = "Cliffman"
+		}
+		change_statists_vs_orangists = 0.33
+	}
+	option = {
+		name = elections.720.neckclifferadmirals
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			has_reform = neckcliffe_stadthalter_monarchy_reform
+		}
+		if = {
+			limit = {
+				has_country_flag = imperial_admirals_administrative_education
+			}
+			change_adm = 1
+		}
+		else_if = {
+			limit = {
+				has_country_flag = imperial_admirals_diplomatic_education
+			}
+			change_dip = 1
+		}
+		else_if = {
+			limit = {
+				has_country_flag = imperial_admirals_miliray_education
+			}
+			change_mil = 1
+		}
+		define_ruler = {
+		}
+		change_statists_vs_orangists = -0.33
 	}
 }
 

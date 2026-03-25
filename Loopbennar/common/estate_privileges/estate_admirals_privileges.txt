@@ -1,0 +1,439 @@
+########################
+########################
+### April Neckcliffe ###
+########################
+########################
+estate_admirals_advisor = {
+	icon = privilege_recruit_minister
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0.05
+	loyalty = 0.05
+	penalties = {
+		stability_cost_modifier = 0.1
+	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_burghers_commercial_board_of_advice
+		}
+	}
+	is_valid = {
+		tag = A22
+	}
+	on_granted = {
+	}
+	can_revoke = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		dip_advisor_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_admiralty_board = {
+	icon = privilege_royal_authority
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 2
+		}
+	}
+	loyalty = 0.1
+	influence = 0.1
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+#These Influence Admiral Rulers
+estate_admirals_administrative_education = {
+	icon = privilege_royal_authority
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.1
+	land_share = 5
+	ai_will_do = {
+		factor = 100
+	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_admirals_military_education
+			has_estate_privilege = estate_admirals_diplomatic_education
+		}
+		has_country_flag = has_moonisle_academy
+		9 = {
+			base_tax = 15
+		}
+	}
+	benefits = {
+		adm_tech_cost_modifier = -0.02
+		governing_capacity = 50
+		state_maintenance_modifier = -0.1
+	}
+	on_granted = {
+		custom_tooltip = estate_admirals_administrative_education_tt
+		set_country_flag = imperial_admirals_administrative_education
+	}
+	on_revoked = {
+		clr_country_flag = imperial_admirals_administrative_education
+	}
+	cooldown_years = 10
+}
+
+estate_admirals_diplomatic_education = {
+	icon = privilege_royal_authority
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.1
+	land_share = 5
+	ai_will_do = {
+		factor = 100
+	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_admirals_administrative_education
+			has_estate_privilege = estate_admirals_military_education
+		}
+		has_country_flag = has_moonisle_academy
+		9 = {
+			base_production = 15
+		}
+	}
+	benefits = {
+		dip_tech_cost_modifier = -0.02
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.1
+	}
+	on_granted = {
+		custom_tooltip = estate_admirals_diplomatic_education_tt
+		set_country_flag = imperial_admirals_diplomatic_education
+	}
+	on_revoked = {
+		clr_country_flag = imperial_admirals_diplomatic_education
+	}
+	cooldown_years = 10
+}
+
+estate_admirals_military_education = {
+	icon = privilege_royal_authority
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.1
+	land_share = 5
+	ai_will_do = {
+		factor = 100
+	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_admirals_administrative_education
+			has_estate_privilege = estate_admirals_diplomatic_education
+		}
+		has_country_flag = has_moonisle_academy
+		9 = {
+			base_manpower = 15
+		}
+	}
+	benefits = {
+		mil_tech_cost_modifier = -0.02
+		sailors_recovery_speed = 0.1
+		global_naval_barrage_cost = -0.2
+	}
+	on_granted = {
+		custom_tooltip = estate_admirals_military_education_tt
+		set_country_flag = imperial_admirals_military_education
+	}
+	on_revoked = {
+		clr_country_flag = imperial_admirals_military_education
+	}
+	cooldown_years = 10
+}
+
+estate_admirals_control_of_trade = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0.1
+	loyalty = 0
+	penalties = {
+		trade_efficiency = -0.1
+	}
+	can_select = {
+		always = no
+	}
+	is_valid = {
+		tag = A22
+	}
+	on_granted = {
+	}
+	can_revoke = {
+		dynasty = "Cliffman"
+	}
+	cooldown_years = 10
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	benefits = {
+		imperial_admirals_privilege_slots = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_integrated_druids = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		#has_country_flag = neckcliffe_integrated_druids
+	}
+	is_valid = {
+		tag = A22
+		#has_country_flag = neckcliffe_integrated_druids #we dont want this appearing until it is able to be granted?
+	}
+	can_revoke = {
+		always = no
+	}
+	benefits = {
+		sea_repair = yes
+		recover_navy_morale_speed = 0.1
+		imperial_admirals_privilege_slots = 1
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_dwarvish_cannons = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		#has_country_flag = neckcliffe_dwarvish_cannons
+	}
+	is_valid = {
+		tag = A22
+		#has_country_flag = neckcliffe_dwarvish_cannons #we dont want this appearing until it is able to be granted?
+	}
+	can_revoke = {
+	}
+	benefits = {
+		heavy_ship_number_of_cannons_modifier = 0.05
+		imperial_admirals_privilege_slots = 1
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_ironclad_hulls = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		#producing some amount of iron or something
+	}
+	is_valid = {
+		tag = A22
+	}
+	can_revoke = {
+	}
+	benefits = {
+		ship_durability = 0.05
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_damestear_propulsion = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		#producing some amount of damestear or something
+	}
+	is_valid = {
+		tag = A22
+	}
+	can_revoke = {
+	}
+	benefits = {
+		movement_speed_in_fleet_modifier = 1
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_military_naval_doctrines = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		num_of_marines = 30		#?
+		#some other thing
+	}
+	is_valid = {
+		tag = A22
+	}
+	can_revoke = {
+	}
+	benefits = {
+		regiment_disembark_speed = 0.1
+		landing_penalty = -1
+		transport_attrition = -0.2
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_upwards_mobility = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		#negotiated with admirals or whatever
+	}
+	is_valid = {
+		tag = A22
+	}
+	can_revoke = {
+	}
+	benefits = {
+		naval_tradition_from_battle = 0.2
+		prestige_from_naval = 0.2
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_admirals_dual_command = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes
+		}
+		modifier = {
+			max_absolutism = 1
+		}
+	}
+	influence = 0
+	loyalty = 0
+	can_select = {
+		always = no
+		#negotiated with admirals or whatever
+	}
+	is_valid = {
+		tag = A22
+	}
+	can_revoke = {
+	}
+	benefits = {
+		max_flagships = 1
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

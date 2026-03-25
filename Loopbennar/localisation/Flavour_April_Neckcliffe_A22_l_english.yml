@@ -1,0 +1,226 @@
+﻿l_english:
+ ########################
+ ########################
+ ### April Neckcliffe ###
+ ########################
+ ########################
+
+ ################
+ ### MISSIONS ###
+ ################
+ neckcliffe_secure_lumber_title:0 "Secure Lumber"
+ neckcliffe_secure_lumber_desc:0 "The Imperial Navy was devastated during the Lilac Wars, and we have lost the rights to hold the tilte of its keeper. We must secure a source of lumber in order to rebuild our armada and reclaim the title!"
+
+ neckcliffe_ancient_forests_title:0 "Into the Ancient Forests"
+ neckcliffe_ancient_forests_desc:0 "Our armies have descended into the Ancient Forests and have claimed victory over those of Woodwell. Though, our timbermen have not been coming back with the bounties they had promised. Something is amiss!"
+
+ neckcliffe_deal_with_druids_title:0 "A Deal with the Druids"
+ neckcliffe_deal_with_druids_desc:0 "We will grant the Druids autonomy over the forests, and in turn they have allowed us the right to log under their oversight. This cooperation may allow us to seize the rest of the forests!"
+
+ neckcliffe_further_beyond_title:0 "Further Beyond"
+ neckcliffe_further_beyond_desc:0 "A majority of the Ancient Forest is under our control, and we are free to organize an effort to seize the remaining woods aided by the druids. If all goes to plan, we may seize the remainer of Carneteria from right under the nose of its owner."
+
+ neckcliffe_joint_venture_title:0 "A Joint Venture"
+ neckcliffe_joint_venture_desc:0 "With a majority of the Ancient Forests under our control, the Druids have asked us to free their kin in Timberfort. Conveniently, their goals align with those of the Admirals. Seizing the Damesneck is one of their top priorities! If we can control The Pearls, we can toll the flow of trade in and out of the Dameshead and from the Bay of Wines."
+
+ neckcliffe_the_pearly_toll_title:0 "The Pearly Toll"
+ neckcliffe_the_pearly_toll_desc:0 "With The Pearls in our grasp, we can impose a toll on those traversing the Damesneck. Ships from all corners of the world will dock in our port to pay this fee, or run the risk of being intercepted by our fleet."
+
+ neckcliffe_our_neck_of_the_woods_title:0 "Our Neck of the Woods"
+ neckcliffe_our_neck_of_the_woods_desc:0 "With the Ancient Forests united, the Druids are free to exercise their full power amongst the entirety of the forests. An age of prosperity is upon them, and as their benefactor we will surely also benefit!"
+
+ neckcliffe_strep_throat_title:0 "Strep Throat"
+ neckcliffe_strep_throat_desc:0 "We must confront the gangs that are playing lord in our once bustling city of Throatport if we are to make any effort to restore the Imperial Dockyards."
+
+ neckcliffe_gangs_confronted_title:0 "Clear Streets"
+ neckcliffe_gangs_confronted_desc:0 "We have driven out the unsavory fellows that were operating within broad daylight, which certainly makes it easier to begin restoration efforts within the city. We are not entirely out of the woods, however. Many underground cabals still run amok in the city, much more hidden from the naked eye. We cannot yet lay down our arms."
+
+ neckcliffe_address_counterfeiters_title:0 "Address Counterfeiters"
+ neckcliffe_address_counterfeiters_desc:0 "We must attempt to address the rampant counterfeiting that is heavily inflating our currency!"
+
+ neckcliffe_normalizing_relations_title:0 "Normalizing Relations"
+ neckcliffe_normalizing_relations_desc:0 "If our state is to recover the rights to the Imperial Navy, we must normalize relations within the empire."
+
+ neckcliffe_relations_repaired_title:0 "Relations Repaired"
+ neckcliffe_relations_repaired_desc:0 "The memberstates of the Empire of Anbennar are no longer hesitant to welcome our diplomats into their halls!"
+
+ neckcliffe_strengthen_imperial_bonds_title:0 "Strengthen Imperial Bonds"
+ neckcliffe_strengthen_imperial_bonds_desc:0 "With the memberstates of the Empire of Anbennar once again welcoming our statesmen, we are free to curry favor and build trust between our nation and the Empire. We surely will not sully our reputation again."
+
+ neckcliffe_imperial_ambitions_title:0 "Imperial Ambitions"
+ neckcliffe_imperial_ambitions_desc:0 "It would be adventageous for our state to secure rank in the Empire. We should seek to improve relations with the Emperor and Electors alike to further our own ambitions."
+ neckcliffe_imperial_ambitions_effect_tt:0 "§TWe will obtain rewards for fulfilling either or both requirements for this mission!§!\n"
+
+ neckcliffe_control_trade_title:0 "Control our Trade"
+ neckcliffe_control_trade_desc:0 "We have spared no effort in beginning the restoration of Throatport, but those underground rings still operate within our borders. We must follow any scent we can catch and strike decisively to put down this rabble."
+
+ neckcliffe_establish_moonisle_title:0 "Establish Moonisle"
+ neckcliffe_establish_moonisle_desc:0 "Having seized the Moonisle at the request of the Imperial Admirals, they now seem keen on establishing a naval outpost on the island. It would be wise to entertain them."
+
+ neckcliffe_moonisle_naval_academy_title:0 "Moonisle Naval Academy"
+ neckcliffe_moonisle_naval_academy_desc:0 "At the direction of the Imperial Admirals, we have completed work on a centralized Naval Academy on the island of Moonisle for our brightest officers to educate the next generation of Admirals."
+ neckcliffe_moonisle_naval_academy_effect_tt:0 "§GCompleting the Academy will allow us to take new privileges for the Imperial Admirals estate!§!"
+
+ neckcliffe_seize_damesteeth_title:0 "Seize Damesteeth"
+ neckcliffe_seize_damesteeth_desc:0 "To properly control the flow of trade through the Dameshead, it is imperative that we own the Damesteeth."
+ 
+ neckcliffe_land_routes_title:0 "Land Routes"
+ neckcliffe_land_routes_desc:0 "The Admirals have pushed us to seize the Damesteeth, but sieging the island only by sea would be silly when a land route is also available."
+
+ neckcliffe_never_again_title:0 "Never Again"
+ neckcliffe_never_again_desc:0 "We must not again betray our Imperial Emperor, we cannot suffer the same fate we had during the Lilac Wars. We will fight to the last man!"
+
+ ##############
+ ### EVENTS ###
+ ##############
+ neckcliffe_immediate.1.t:0 "Lost Honor"
+ neckcliffe_immediate.1.d:0 "We have been faithful servants of Dameria and the Empire for ages, reliable and steadfast. Thus, when the Lilac Wars came, we backed our liege and followed him into battle against his foes. Even as the tide of war slowly turned against us, we stayed true to our loyalties. During the Betrayal of Wesdam, we dutifully transported as many as we could to the Damesear and though we saved only a fraction of the army, without our help the war might have ended right there. Lorentish revenge was swift however, sailing their ships into the Dameshead and, with the help of several powerful magi, sunk the glorious imperial navy, and our ruler, to the bottom of the seas. Suddenly, we were alone. Cut off from all of our allies and surrounded by many who would happily end us. With heavy hearts we did the only reasonable thing to save our lands and people; joined Lorent and the Rose Party. Ever since, our honor has been sullied. We are in a strenuous relationship where one side considers us not trustworthy and the other considers us traitors. Furthermore, Throatport, our largest city and ever the source of our headache, completely succumbed to crime and is barely under our control."
+ neckcliffe_immediate.1.a:0 "Truly a tragedy."
+
+ neckcliffe.1.t:0 "Approached by the Druids"
+ neckcliffe.1.d:0 "As our troops advanced into the Ancient Forests of Woodwell, our lumberers wasted no time following behind hoping to secure whatever timber they could sink their axes into. Peculiarly, these lumberers oftentimes returned emptyhanded - or sometimes they had not returned at all. Those who had made their way back described the forests as ever-changing and ever-growing, a labrinyth of trees and vines that responded to their presence. The generals of our army; however, had reported no such things. \"Was the forest aware of their intent to strip it, protecting itself from the timberman's axe?" [Root.Monarch.GetName] wondered.\n\nHaving given the decree to secure a source of lumber to restore the navy, [Root.Monarch.GetName] descended upon the forests [Root.Monarch.GetHerselfHimself] to observe the spectacle first-hand. When [Root.Monarch.GetSheHe] entered the forests, [Root.Monarch.GetSheHe] was engulfed in a flurry of flora which had cut [Root.Monarch.GetHerHim] off entirely from [Root.Monarch.GetHerHis] escorts. Then, several entities emerged from the dark, adorned with leaves and flowers of all shapes and sizes - [Root.Monarch.GetName] recognized them - Druids. But, this could be an opportunity. As [Root.Monarch.GetName] was thinking to [Root.Monarch.GetHerselfHimself] one of the Druids spoke, \"We know your reason for being here, [Root.Monarch.GetName]. We care not for what banner claims the forest, but we cannot allow it to be harmed. This place protects us, and in turn, we protect it. You must leave and never again send your men." That would not do. This forest was abundant with the lumber required to restore the navy to its previous prestige, and one day reclaim the rights to the Imperial Navy. "I understand your hesitance, but I believe I can make you an offer that would benefit us both." [Root.Monarch.GetName] calmly replied. \"I can guarantee the autonomy of this forest to the Druids, and in turn you would allow my lumberers within. You may oversee any operations within your borders and direct them as you would like. We would not bring harm to your home."\n\nThe Druids appeared to be taken aback by this offer, but did not deny outright. They then disappeared into the growth as quickly as they had appeared, and [Root.Monarch.GetName] was freed from [Root.Monarch.GetHerHis] captivity, appearing once more with [Root.Monarch.GetHerHis] entourage. The silence was deafening amongst the party, as they had just previously seen their Monarch disappear before their eyes. The escorts hurriedly pushed the Monarch to leave this place at once, but [Root.Monarch.GetName] was oddly at ease. As the party journied back towards the Capitol, [Root.Monarch.GetName] eagerly awaited the response of the Druids."
+ neckcliffe.1.a:0 "What an exciting turn of events!"
+
+ neckcliffe.2.t:0 "The Druid's Response"
+ neckcliffe.2.d:0 "A timberman covered in mud had arrived at the Royal Court urging to see [Root.Monarch.GetName], claiming they had a letter to deliver from the forests. The gaurds had barred them from entry - to many this timberman appeared derranged and insane. Their appearance and demeanor hardly fit the setting. Though when [Root.Monarch.GetName] had caught wind of this new arrival, [Root.Monarch.GetSheHe] demanded they be let through at once.\n\nArriving before the Monarch, the timberman explained what had happened. A tangle of vines had knocked them to the ground when they had tried to enter the Ancient Forests once more, and a humanoid had appeared before them grasping the message. It had told them to deliver the letter to the Monarch without delay. [Root.Monarch.GetName] opened the letter, pleasantly much cleaner than the lumberer before [Root.Monarch.GetHerHim], which outlined the terms of cooperation between the druids in theforests and those of [Root.GetName]. The terms were acceptable, and a formal response was readied with haste."
+ neckcliffe.2.a:0 "Cheers to a fruitful future!"
+ 
+ neckcliffe.3.t:0 "Extending an Olive Branch"
+ neckcliffe.3.d:0 ""
+ neckcliffe.3.a:0 "Send the diplomats!"
+
+ neckcliffe.4.t:0 "Neckcliffe extends an Olive Branch"
+ neckcliffe.4.d:0 ""
+ neckcliffe.4.a:0 "They will not be forgiven that easily."
+ neckcliffe.4.b:0 "We appreciate their efforts!"
+
+ neckcliffe.5.t:0 "Addressing Counterfeit Coins"
+ neckcliffe.5.d:0 ""
+ neckcliffe.5.a:0 "I suppose it would not hurt..."
+ neckcliffe.5.a.tt:0 "§TThis choice will be presented to you again on ruler change.\n§!"
+ neckcliffe.5.b:0 "Shut it down!"
+ neckcliffe.5.b.tt:0 "§RChoosing this option will disable this choice for the remainder of the game.\n§!"
+
+ neckcliffe.6.t:0 "The Emperor is Hesitant"
+ neckcliffe.6.d:0 ""
+ neckcliffe.6.a:0 "Unfortunate, but understandable."
+ neckcliffe.6.a.tt:0 "§TTime will heal all wounds.§!"
+
+ neckcliffe.7.t:0 "The Emperor Applauds our Efforts"
+ neckcliffe.7.d:0 ""
+ neckcliffe.7.a:0 "This will surely be a boon."
+
+ neckcliffe.8.t:0 "Time heals all wounds"
+ neckcliffe.8.d:0 ""
+ neckcliffe.8.a:0 "They have forgotten our misdeeds."
+
+ neckcliffe.9.t:0 "Petition the Emperor"
+ neckcliffe.9.d:0 ""
+ neckcliffe.9.a:0 "Send the petition!"
+
+ neckcliffe.10.t:0 "Petition of Neckcliffe"
+ neckcliffe.10.d:0 ""
+ neckcliffe.10.a:0 "We see the value in Neckcliffer elctorship."
+ neckcliffe.10.b:0 "They can kick rocks!"
+
+ neckcliffe.11.t:0 "The Emperor accepts our Petition!"
+ neckcliffe.11.d:0 ""
+ neckcliffe.11.a:0 "We shall not squander this title."
+
+ neckcliffe.12.t:0 "The Emperor declines our Petition"
+ neckcliffe.12.d:0 ""
+ neckcliffe.12.a:0 "Damn."
+
+ neckcliffe.13.t:0 "Confront the Gangs"
+ neckcliffe.13.d:0 ""
+ neckcliffe.13.a:0 "Ready your arms!"
+
+ neckcliffe.17.t:0 "Broad Daylight"
+ neckcliffe.17.d:0 ""
+ neckcliffe.17.a:0 "We are not out of the woods yet."
+
+ neckcliffe.14.t:0 "A Decisive Strike"
+ neckcliffe.14.d:0 ""
+ neckcliffe.14.a:0 "Go for the Jugular!"
+
+ neckcliffe.15.t:0 "Backwash"
+ neckcliffe.15.d:0 ""
+ neckcliffe.15.a:0 "We cannot yet lay down our arms!"
+ neckcliffe.15.a.tt:0 "§TThe admirals will enforce their demands in time...§!"
+
+ neckcliffe.16.t:0 "Demands of the Admiralty"
+ neckcliffe.16.d:0 ""
+ neckcliffe.16.a:0 "We have no choice.."
+ neckcliffe.16.b:0 "Over my dead body!"
+
+ ################
+ ### MODFIERS ###
+ ################
+ neckcliffe_druid_oversight:0 "Druids Overseeing Timber Industry"
+ desc_neckcliffe_druid_oversight:0 "We have allowed the Druids to oversee our logging operations within their lands, and thus they have shown us how to secure the bounty of the forests without destroying them."
+
+ neckcliffe_a_forest_whole:0 "A Forest Whole"
+ desc_neckcliffe_a_forest_whole:0 "The forests have been united under the oversight of the Druids, and an age of prosperity is upon them!"
+
+ neckcliffe_untrustworthy:0 "Broken Oaths, Sullied Words"
+ desc_neckcliffe_untrustworthy:0 "Our actions during the Lilac Wars have left both the victors and the losers untrustworthy of our diplomats."
+ neckcliffe_untrustworthy_2:0 "Repairing Relations"
+ desc_neckcliffe_untrustworthy_2:0 "Our diplomats are working tirelessly to normalize our relations within the Empire."
+
+ neckcliffe_trustworthy:0 "Trustworthy Once More"
+ neckcliffe_trustworthy_desc:0 "The Emperor themself has bestowed grace upon our realm for its wrongdoings in the Lilac Wars. As such, our diplomats are no longer barred from international affairs"
+ neckcliffe_trustworthy_2:0 "Swaying Electors"
+ neckcliffe_trustworthy_2_desc:0 "We have established close ties between [Root.GetName] and Electors within the Empire of Anbennar. We can use these bonds to further our Imperial Agenda"
+ 
+ neckcliffe_never_again:0 "Never Again"
+ neckcliffe_never_again_desc:0 "We will fight to the last man!"
+
+ neckcliffe_counterfeiters:0 "Rampant Counterfeiters"
+ desc_neckcliffe_counterfeiters:0 "Fraudulent coinage is circulating within our country"
+ neckcliffe_counterfeiters_2:0 "Colluding with Counterfeiters"
+ neckcliffe_counterfeiters_2_desc:0 "[Root.Monarch.GetName] is colluding with the counterfeiters."
+
+ neckcliffe_smugglers:0 "Smuggler's Haven"
+ neckcliffe_smugglers_desc:0 "With the Imperial Navy all but destroyed and the national gaurd devastated, smugglers have found it exceedingly easy to operate within our country."
+ neckcliffe_smugglers_2:0 "Disgraced Admiralty"
+ neckcliffe_smugglers_2_desc:0 "The remnants of the Imperial Admiralty are assisting the smugglers in navigating the straits of the dameshead and the streets of our ports."
+
+ neckcliffe_throatport_crime:0 "Crimelords"
+ neckcliffe_throatport_crime_desc:0 "During the chaos of the Lilac wars, the city gaurds of Throatport grew thin. Crimelords have overtaken the streets and have control over many regions of the city"
+ neckcliffe_throatport_crime_2:0 "Backwash"
+ neckcliffe_throatport_crime_2_desc:0 "We have dislodged the Crimelords from operating in broad daylight, but many underground rings still function within the city walls."
+
+ neckcliffe_throatport_disrepair:0 "Dockyards Destroyed"
+ neckcliffe_throatport_disrepair_desc:0 "During Throatport's occupation in the Lilac Wars, many of the dockyard functions were destroyed and others left to the elements. The once bustling port is now completely silent, and its lifeblood severed."
+ neckcliffe_throatport_disrepair_2:0 "Disrepair"
+ neckcliffe_throatport_disrepair_2_desc:0 "Although the ports of the city were heavily damaged, we have invested some efforts to mitigate the disrepair."
+
+ neckcliffe_developing_moonisle:0 "Developing Moonisle"
+ neckcliffe_developing_moonisle_desc:0 "The Imperial Admirals of [Root.GetName] are establishing an outpost on this island."
+ neckcliffe_developing_moonisle_2:0 "Developing Moonisle (2)"
+ neckcliffe_developing_moonisle_2_desc:0 "The Imperial Admirals of [Root.GetName] are establishing an outpost on this island."
+ neckcliffe_moonisle_academy:0 "Moonisle Naval Academy"
+ neckcliffe_moonisle_academy_desc:0 "The Imperial Admirals of [Root.GetName] have established a Naval Academy on this island."
+
+ #####################
+ ### COUNTRY FLAGS ###
+ #####################
+
+ ###################
+ ### GOV REFORMS ###
+ ###################
+ neckcliffe_stadthalter_monarchy_reform:0 "Neckcliffer Admiralty"
+ neckcliffe_stadthalter_monarchy_reform_desc:0 "PLACEHOLDER!§!\n\nAllows §YPlutocratic§! Idea Group.\nDisallows §YAristocratic§! Idea Group.\n"
+ neckcliffe_stadthalter_monarchy_reform_enabled:0 "PLACEHOLDER!"
+
+ neckcliffer_admirals_MECHANIC_TOOLTIP:0 "Admirals"
+ neckcliffer_monarchists_MECHANIC_TOOLTIP:0 "Monarchists"
+ neckcliffer_admirals:0 "Imperial Admirals are in Power"
+ neckcliffer_monarchists:0 "Neckcliffer Monarchists are in Power"
+
+ elections.720.neckcliffe:0 "While the official ruler of [Root.GetName] is the Cliffman Dynasty, the Imperial Admirals hold significant sway within the country and oftentimes find themselves more influential than the Monarch themself. During this time of transition, we must find who is most fit to rule our ranks."
+ elections.721.neckcliffe:0 "While the official ruler of [Root.GetName] is the Cliffman Dynasty, the Imperial Admirals hold significant sway within the country and oftentimes find themselves more influential than the Monarch themself. During this time of transition, we must find who is most fit to rule our ranks."
+
+ elections.720.neckcliffermonarchists:0 "Those of the Cliffman Dynasty are more fit to rule [Root.GetName] at this time."
+ elections.720.neckclifferadmirals:0 "The Admirals are more fit to rule during these times."
+ elections.720.neckcliffenochange:0 "[Root.Monarch.GetName] is a fine ruler."

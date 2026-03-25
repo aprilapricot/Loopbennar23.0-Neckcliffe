@@ -1,119 +1,566 @@
-
-
-namespace = flavor_neckcliffe
-
-#Intro Event
+########################
+########################
+### April Neckcliffe ###
+########################
+########################
+namespace = neckcliffe
 country_event = {
-	id = flavor_neckcliffe.1
-	title = flavor_neckcliffe.1.t
-	desc = flavor_neckcliffe.1.d
-	picture = SHIP_SAILING_eventPicture
-	
-	is_triggered_only = yes
+	#Day 1 setup
+	id = neckcliffe_immediate.1
+	title = neckcliffe_immediate.1.t
+	desc = neckcliffe_immediate.1.d
+	picture = CORRUPTION_eventPicture
 	fire_only_once = yes
-	
+	is_triggered_only = yes
 	trigger = {
 		ai = no
 		tag = A22
 	}
-	
 	option = {
-		name = "flavor_neckcliffe.1.a"
-		26 = { #Throatport
+		name = neckcliffe_immediate.1.a
+		set_country_flag = neckcliffe_repairing_relations
+		add_country_modifier = {
+			name = neckcliffe_untrustworthy
+			duration = -1
+		}
+		add_country_modifier = {
+			name = neckcliffe_counterfeiters
+			duration = -1
+		}
+		add_country_modifier = {
+			name = neckcliffe_smugglers
+			duration = -1
+		}
+		26 = {
 			add_province_modifier = {
-				name = neckcliffe_rampant_counterfeiters
+				name = neckcliffe_throatport_crime
 				duration = -1
 			}
 			add_province_modifier = {
-				name = neckcliffe_rampant_corruption
-				duration = -1
-			}
-			add_province_modifier = {
-				name = neckcliffe_throatport_slums
+				name = neckcliffe_throatport_disrepair
 				duration = -1
 			}
 		}
 	}
 }
 
-#Buying Napesbay
 country_event = {
-	id = flavor_neckcliffe.2
-	title = flavor_neckcliffe.2.t
-	desc = flavor_neckcliffe.2.d
-	picture = ECONOMY_eventPicture
-	
+	#Druids approach Ruler
+	id = neckcliffe.1
+	title = neckcliffe.1.t
+	desc = neckcliffe.1.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
 	is_triggered_only = yes
-	
 	trigger = {
-		always = yes
-	}
-	
-	option = {
-		name = "flavor_neckcliffe.2.a"
-		add_treasury = -500
-		vassalize = A82
+		tag = A22
 	}
 	option = {
-		name = "flavor_neckcliffe.2.b"
-		add_prestige = -10
+		#A88 woodwell becomes subject
+		name = neckcliffe.1.a
+		country_event = {
+			id = neckcliffe.2
+			days = 30
+		}
+		#custom_tooltip = A22_neckcliffe.1_tt
 	}
 }
 
-#Building the Lighthouse
 country_event = {
-	id = flavor_neckcliffe.3
-	title = flavor_neckcliffe.3.t
-	desc = flavor_neckcliffe.3.d
-	picture = ECONOMY_eventPicture
-	
+	#Druids accept
+	id = neckcliffe.2
+	title = neckcliffe.2.t
+	desc = neckcliffe.2.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
 	is_triggered_only = yes
-	
 	trigger = {
-		always = yes
+		tag = A22
 	}
-	
 	option = {
-		name = "flavor_neckcliffe.3.a"
-		94 = {
-			add_permanent_province_modifier = {
-				name = "neckcliffe_lighthouse"
-				duration = -1
+		#A88 woodwell becomes subject
+		name = neckcliffe.2.a
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			set_country_flag = neckcliffe_deal_with_druids_flag
+			release_with_religion_and_culture = {
+				tag = A88
+				religion = regent_court
+				culture = west_damerian
+			}
+			create_subject = {
+				subject_type = march
+				subject = A88
 			}
 		}
-		add_treasury = -1000
-		add_adm_power = -100
-	}
-}
-
-#Launching the Legislature
-country_event = {
-	id = flavor_neckcliffe.4
-	title = flavor_neckcliffe.4.t
-	desc = flavor_neckcliffe.4.d
-	picture = ECONOMY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		always = yes
-	}
-	
-	option = {
-		name = "flavor_neckcliffe.4.a"
-		custom_tooltip = neckcliffe_legislature
 		hidden_effect = {
-			every_known_country = {
-				limit = { 
-					is_part_of_hre = yes 
-					NOT = { tag = A22 }
-				}
-				add_country_modifier = { 
-					name = neckcliffe_treaty_of_the_white_cliffs 
-					duration = -1 
+			woodwell_area = {
+				remove_claim = root
+			}
+		}
+	}
+}
+
+country_event = {
+	#Approach the Emperor
+	id = neckcliffe.3
+	title = neckcliffe.3.t
+	desc = neckcliffe.3.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#Plead your case!
+		name = neckcliffe.3.a
+		ai_chance = {
+			factor = 100
+		}
+		emperor = {
+			country_event = {
+				id = neckcliffe.4
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	#The emperor's response
+	id = neckcliffe.4
+	title = neckcliffe.4.t
+	desc = neckcliffe.4.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = emperor
+	}
+	option = {
+		#The emperor chooses to somewhat believe your efforts
+		name = neckcliffe.4.a
+		ai_chance = {
+			factor = 75
+		}
+		FROM = {
+			country_event = {
+				id = neckcliffe.6
+				days = 10
+			}
+		}
+	}
+	option = {
+		#The emperor chooses to wholeheartedly accept your efforts
+		name = neckcliffe.4.b
+		ai_chance = {
+			factor = 25
+		}
+		FROM = {
+			country_event = {
+				id = neckcliffe.7
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	#How to deal with counterfeiters?
+	id = neckcliffe.5
+	title = neckcliffe.5.t
+	desc = neckcliffe.5.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#take bribes
+		name = neckcliffe.5.a
+		custom_tooltip = neckcliffe.5.a.tt
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = {
+			remove_country_modifier = neckcliffe_counterfeiters
+			add_country_modifier = {
+				name = neckcliffe_counterfeiters_2
+				duration = -1
+			}
+		}
+	}
+	option = {
+		#SHUT IT DOWN -Gordon Ramsey
+		name = neckcliffe.5.b
+		custom_tooltip = neckcliffe.5.b.tt
+		ai_chance = {
+			factor = 50
+		}
+		ROOT = {
+			remove_country_modifier = neckcliffe_counterfeiters
+			remove_country_modifier = neckcliffe_counterfeiters_2
+		}
+	}
+}
+
+country_event = {
+	#The emperor's picks to somewhat believe your efforts
+	id = neckcliffe.6
+	title = neckcliffe.6.t
+	desc = neckcliffe.6.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#The emperor chooses to somewhat believe you
+		name = neckcliffe.6.a
+		custom_tooltip = neckcliffe.6.a.tt
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			remove_country_modifier = neckcliffe_untrustworthy
+			add_country_modifier = {
+				name = neckcliffe_untrustworthy_2
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	#The emperor's picks to wholeheartedly believe you
+	id = neckcliffe.7
+	title = neckcliffe.7.t
+	desc = neckcliffe.7.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#The emperor chooses to somewhat believe you
+		name = neckcliffe.7.a
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			remove_country_modifier = neckcliffe_untrustworthy
+			clr_country_flag = neckcliffe_repairing_relations
+		}
+	}
+}
+
+country_event = {
+	#you waited long enough to normalize relations through time
+	id = neckcliffe.8
+	title = neckcliffe.8.t
+	desc = neckcliffe.8.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = A22
+		has_country_modifier = neckcliffe_untrustworthy_2
+	}
+	mean_time_to_happen = {
+		years = 5
+	}
+	option = {
+		#you waited long enough to clear it
+		name = neckcliffe.8.a
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			remove_country_modifier = neckcliffe_untrustworthy_2
+			clr_country_flag = neckcliffe_repairing_relations
+		}
+	}
+}
+
+country_event = {
+	#Petition the emperor to become an elector
+	id = neckcliffe.9
+	title = neckcliffe.9.t
+	desc = neckcliffe.9.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#Send the petition
+		name = neckcliffe.9.a
+		ai_chance = {
+			factor = 100
+		}
+		emperor = {
+			country_event = {
+				id = neckcliffe.10
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	#emperor recieves petition
+	id = neckcliffe.10
+	title = neckcliffe.10.t
+	desc = neckcliffe.10.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = emperor
+	}
+	option = {
+		#accept
+		name = neckcliffe.10.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_electors = 7
 				}
 			}
 		}
-		set_country_flag = neckcliffe_dominance_on_the_seas
+		if = {
+			limit = {
+				NOT = {
+					num_of_electors = 7
+				}
+			}
+			FROM = {
+				country_event = {
+					id = neckcliffe.11
+					days = 1
+				}
+				elector = yes
+			}
+		}
+	}
+	option = {
+		#deny
+		name = neckcliffe.10.b
+		ai_chance = {
+			factor = 25
+		}
+		FROM = {
+			country_event = {
+				id = neckcliffe.12
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	#The emperor says yes
+	id = neckcliffe.11
+	title = neckcliffe.11.t
+	desc = neckcliffe.11.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#yay
+		name = neckcliffe.11.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	#The emperor says no
+	id = neckcliffe.12
+	title = neckcliffe.12.t
+	desc = neckcliffe.12.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#Grrr...
+		name = neckcliffe.12.a
+		ai_chance = {
+			factor = 100
+		}
+		#something bad happens?
+	}
+}
+
+country_event = {
+	#Confront the gangs that are lording over throatport
+	id = neckcliffe.13
+	title = neckcliffe.13.t
+	desc = neckcliffe.13.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#spawns the rebels
+		name = neckcliffe.13.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = -1
+		26 = {
+			spawn_rebels = {
+				size = 8
+				type = leadered_peasant_rebels
+			}
+		}
+		set_country_flag = neckcliffe_confronting_gangs_flag
+	}
+}
+
+country_event = {
+	#Confront the gangs that are lording over throatport
+	id = neckcliffe.17
+	title = neckcliffe.17.t
+	desc = neckcliffe.17.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			tag = A22
+			has_country_flag = neckcliffe_confronting_gangs_flag
+			not = {
+				num_of_rebel_armies = 1
+			}
+		}
+	}
+	option = {
+		#beat the rebels
+		name = neckcliffe.17.a
+		ai_chance = {
+			factor = 100
+		}
+		clr_country_flag = neckcliffe_confronting_gangs_flag
+		set_country_flag = neckcliffe_gangs_confronted_flag
+		26 = {
+			add_province_modifier = {
+				name = neckcliffe_throatport_crime_2
+				duration = -1
+			}
+			remove_province_modifier = neckcliffe_throatport_crime
+		}
+	}
+}
+
+country_event = {
+	#Attempt to root out smugglers
+	id = neckcliffe.14
+	title = neckcliffe.14.t
+	desc = neckcliffe.14.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		#Start event chain
+		name = neckcliffe.14.a
+		ai_chance = {
+			factor = 100
+		}
+		26 = {
+			spawn_rebels = {
+				size = 15
+				type = leadered_peasant_rebels
+			}
+		}
+		country_event = {
+			id = neckcliffe.15
+			days = 90
+		}
+	}
+}
+
+country_event = {
+	#beat the gangs, but smugglers still fighting
+	id = neckcliffe.15
+	title = neckcliffe.15.t
+	desc = neckcliffe.15.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = A22
+	}
+	option = {
+		name = neckcliffe.15.a
+		custom_tooltip = neckcliffe.15.a.tt
+		ai_chance = {
+			factor = 100
+		}
+		remove_country_modifier = neckcliffe_smugglers
+		add_country_modifier = {
+			name = neckcliffe_smugglers_2
+			duration = -1
+		}
+		26 = {
+			remove_province_modifier = neckcliffe_throatport_crime_2
+		}
+	}
+}
+
+country_event = {
+	#the smugglers are actually disgraced admirals fighting for control and influence
+	id = neckcliffe.16
+	title = neckcliffe.16.t
+	desc = neckcliffe.16.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = A22
+		has_country_modifier = neckcliffe_smugglers_2
+	}
+	mean_time_to_happen = {
+		years = 1
+	}
+	option = {
+		name = neckcliffe.16.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = neckcliffe_admirals_takeover
+		remove_country_modifier = neckcliffe_smugglers_2
+		add_government_reform = neckcliffe_stadthalter_monarchy_reform
+		set_estate_privilege = estate_admirals_control_of_trade
+	}
+	option = {
+		name = neckcliffe.16.b
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = neckcliffe_admirals_takeover
+		remove_country_modifier = neckcliffe_smugglers_2
+		add_government_reform = neckcliffe_stadthalter_monarchy_reform
+		define_ruler = {
+		}
+		convert_ruler_to_admiral_tradition = yes
+		set_estate_privilege = estate_admirals_control_of_trade
 	}
 }
