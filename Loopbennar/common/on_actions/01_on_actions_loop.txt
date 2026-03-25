@@ -228,6 +228,7 @@ on_mil_development = {
 ### April Neckcliffe ###
 ########################
 ########################
+
 on_new_monarch = {
 	if = {
 		limit = {
