@@ -119,6 +119,13 @@ neckcliffe_1 = {
 				cede_province = A88
 			}
 			add_manpower = -5
+			every_neighbor_country = {
+				add_aggressive_expansion = {
+					value = 5
+					apply_calc = yes
+					who = root
+				}
+			}
 		}
 	}
 	neckcliffe_our_neck_of_the_woods = {
@@ -165,6 +172,86 @@ neckcliffe_1 = {
 					duration = -1
 				}
 			}
+		}
+	}
+	neckcliffe_across_the_sea = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = {
+			neckcliffe_colonial_port
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_new_world = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_across_the_sea
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_endralliande = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = {
+			neckcliffe_new_world
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_ruined_sea = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = {
+			neckcliffe_endralliande
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_bloodgroves = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = {
+			neckcliffe_ruined_sea
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
 		}
 	}
 }
@@ -260,6 +347,135 @@ neckcliffe_2 = {
 			}
 		}
 	}
+	neckcliffe_diplomatic_operations = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = {
+			neckcliffe_begin_operations
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_overseas_outposts = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {
+			neckcliffe_diplomatic_operations
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_colonial_port = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = {
+			neckcliffe_overseas_outposts
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_along_the_coast = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = {
+			neckcliffe_colonial_port
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	
+	neckcliffe_sarhal_foothold = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_along_the_coast
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_new_forests = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_sarhal_foothold
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_introduce_druids = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_new_forests
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_indirect_rule = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_introduce_druids
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
 }
 
 neckcliffe_3 = {
@@ -347,17 +563,56 @@ neckcliffe_3 = {
 			add_permanent_claim = 9
 		}
 	}
-	neckcliffe_establish_moonisle = {
+	neckcliffe_placate_admirals = {
 		icon = mission_build_up_to_force_limit
 		position = 4
 		required_missions = {
 			neckcliffe_control_trade
 		}
 		provinces_to_highlight = {
-			province_id = 9
+			province_id = 26
 		}
 		trigger = {
 			has_country_flag = neckcliffe_admirals_takeover
+			num_of_estate_agendas_completed = {
+				estate = estate_imperial_admirals
+    			value = 3
+			}
+		}
+		effect = {
+			set_country_flag = neckcliffe_admirals_placated
+		}
+	}
+	neckcliffe_placate_admirals = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = {
+			neckcliffe_control_trade
+		}
+		provinces_to_highlight = {
+			province_id = 26
+		}
+		trigger = {
+			has_country_flag = neckcliffe_admirals_takeover
+			num_of_estate_agendas_completed = {
+				estate = estate_imperial_admirals
+    			value = 3
+			}
+		}
+		effect = {
+			set_country_flag = neckcliffe_admirals_placated
+		}
+	}
+	neckcliffe_establish_moonisle = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = {
+			neckcliffe_placate_admirals
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
 			treasury = 500
 			9 = {
 				owned_by = root
@@ -384,44 +639,100 @@ neckcliffe_3 = {
 			}
 		}
 	}
-	neckcliffe_moonisle_naval_academy = {
+	neckcliffe_paper_source = {
 		icon = mission_build_up_to_force_limit
-		position = 5
+		position = 6
 		required_missions = {
 			neckcliffe_establish_moonisle
+		}
+		provinces_to_highlight = {
+			trade_goods = paper 
+		}
+		trigger = {
+			paper = 1
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_begin_operations = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = {
+			neckcliffe_paper_source
 		}
 		provinces_to_highlight = {
 			province_id = 9
 		}
 		trigger = {
-			treasury = 500
-			navy_tradition = 50
-			9 = {
-				owned_by = root
-				num_of_times_expanded_infrastructure = 2
-				OR = {
-					has_building = courthouse
-					has_building = town_hall
-				}
-				num_free_building_slots = 1
-			}
+			
 		}
 		effect = {
-			custom_tooltip = neckcliffe_moonisle_naval_academy_effect_tt
-			set_country_flag = has_moonisle_academy
-			add_treasury = -500
-			9 = {
-				remove_province_modifier = neckcliffe_developing_moonisle
-				add_province_modifier = {
-					name = neckcliffe_developing_moonisle_2
-					duration = -1
-				}
-				add_permanent_province_modifier = {
-					name = neckcliffe_moonisle_academy
-					duration = -1
-				}
-				add_building = impressment_offices
-			}
+			
+		}
+	}
+	neckcliffe_administrative_operations = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = {
+			neckcliffe_begin_operations
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_food_preservation = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {
+			neckcliffe_administrative_operations
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_wine_for_scurvy = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = {
+			neckcliffe_food_preservation
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_ship_logs = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = {
+			neckcliffe_wine_for_scurvy
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
 		}
 	}
 }
@@ -511,6 +822,103 @@ neckcliffe_4 = {
 			}
 		}
 	}
+	neckcliffe_military_research = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = {
+			neckcliffe_begin_operations
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_sturdy_hulls = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {
+			neckcliffe_military_research
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_better_rigging = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = {
+			neckcliffe_sturdy_hulls
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_improved_cannons = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = {
+			neckcliffe_better_rigging
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_land_support = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_dwarven_cannons
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_field_artillery = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = {
+			neckcliffe_land_support
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	
 }
 
 neckcliffe_5 = {
@@ -750,6 +1158,76 @@ neckcliffe_5 = {
 				name = neckcliffe_never_again
 				duration = 3650
 			}
+		}
+	}
+
+	neckcliffe_moonisle_naval_academy = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			treasury = 500
+			navy_tradition = 50
+			9 = {
+				owned_by = root
+				num_of_times_expanded_infrastructure = 2
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				num_free_building_slots = 1
+			}
+		}
+		effect = {
+			custom_tooltip = neckcliffe_moonisle_naval_academy_effect_tt
+			set_country_flag = has_moonisle_academy
+			add_treasury = -500
+			9 = {
+				remove_province_modifier = neckcliffe_developing_moonisle
+				add_province_modifier = {
+					name = neckcliffe_developing_moonisle_2
+					duration = -1
+				}
+				add_permanent_province_modifier = {
+					name = neckcliffe_moonisle_academy
+					duration = -1
+				}
+				add_building = impressment_offices
+			}
+		}
+	}
+	neckcliffe_dwarven_artisans = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = {
+			neckcliffe_improved_cannons
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+	neckcliffe_ruby_subjection = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = {
+			neckcliffe_dwarven_artisans
+		}
+		provinces_to_highlight = {
+			province_id = 9
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
 		}
 	}
 }

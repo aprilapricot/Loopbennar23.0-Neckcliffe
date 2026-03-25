@@ -179,6 +179,7 @@ estate_admirals_control_of_trade = {
 	loyalty = 0
 	penalties = {
 		trade_efficiency = -0.1
+		global_tax_modifier = -0.1
 	}
 	can_select = {
 		always = no
@@ -190,6 +191,8 @@ estate_admirals_control_of_trade = {
 	}
 	can_revoke = {
 		dynasty = "Cliffman"
+		is_orangists_in_power = yes
+		has_country_flag = neckcliffe_admirals_placated
 	}
 	cooldown_years = 10
 	on_revoked = {
