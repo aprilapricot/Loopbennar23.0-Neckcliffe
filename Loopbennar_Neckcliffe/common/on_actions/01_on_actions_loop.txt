@@ -7,7 +7,7 @@ on_startup = {
 		flavor_loopgeneric.8
 		flavor_loopgeneric.15
 		flavour_kravigozles.0
-		neckcliffe_immediate.1
+		neckcliffe.0
 	}
 }
 

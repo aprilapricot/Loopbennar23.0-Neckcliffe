@@ -1,4 +1,4 @@
-name="Loopbennar"
+name="Loopbennar_Neckcliffe"
 tags={
 	"Alternative History"
 	"Total Conversion"
@@ -29,5 +29,4 @@ replace_path="gfx/loadingscreens"
 replace_path="tutorial"
 picture="Loopbennar.jpg"
 supported_version="v1.37.5.0"
-path="C:/Users/Simon/Documents/Paradox Interactive/Europa Universalis IV/mod/Loopbennar"
-remote_file_id="3165720054"
+path="C:/Users/deyod/Documents/Paradox Interactive/Europa Universalis IV/mod/Loopbennar_Neckcliffe"
